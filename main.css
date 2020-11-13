@@ -8,21 +8,21 @@ body {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     color: #fff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.2em;
+    font-size: 1.5em;
     line-height: 1.5;
     margin: 0 auto;
     padding: 1em 5em 2em;
 }
 
 h1 {
-    font-size: 2.8em;
+    font-size: 2.5em;
     text-align: center;
     margin-top: 1.0em;
     margin-bottom: 1.0em;
 }
 
 h2 {
-    
+    text-align: center;
     margin-top: 2.0em;
     margin-bottom: 2.0em;
 }
@@ -34,10 +34,11 @@ h3,
 h4,
 h5,
 h6 {
+    
     color: #fff;
     font-weight: 600;
     line-height: 0;
-    
+
 }
 
 
@@ -55,8 +56,8 @@ samp {
 }
 
 hr {
-    margin-top: 2.0em;
-    margin-bottom: 2.0em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
     border: 1px solid white;
 }
 
@@ -82,31 +83,76 @@ a:active {
     color: rgba(0, 255, 0);
 }
 
-        .column {
-            float: left;
-            width: 25%;
-        }
+.column {
+    float: left;
+    width: 25%;
+}
 
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1242px) {
-  .column {
-    width: 100%;
-    text-align: center;
-      
-    margin-top: 1.0em;
-    margin-bottom: 1.0em;
-      
-      
-  }
+
+    body {
+    background: #000;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #fff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 1em 0em 1em;
+}
+    
+
+    h1 {
+        font-size: 2.8em;
+        text-align: center;
+        margin-top: 1.0em;
+        margin-bottom: 1.0em;
+    }
+
+    h2 {
+        
+        font-size: 1.8em;
+        text-align: center;
+        margin-top: 2.0em;
+        margin-bottom: 2.0em;
+    }
+
+    .column {
+
+        font-size: 1.2em;
+
+        width: 100%;
+        text-align: center;
+
+        margin-top: 1.0em;
+        margin-bottom: 1.0em;
+
+    }
+    
+hr {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    border: 1px solid white;
 }
 
+    
+    footer {
+font-size: 1.0em;
+        
+    margin-top: 2.0em;
+    margin-bottom: 2.0em;
+}
+    
+
+}
 
 footer {
     margin-top: 2.0em;
