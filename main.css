@@ -14,6 +14,12 @@ body {
     padding: 1em 5em 2em;
 }
 
+h1{
+   font-size: 2.8em;
+   text-align: center;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
     color: #fff;
     font-weight: 600;
@@ -41,7 +47,7 @@ hr{
 
 footer{
    margin-top: 2.0em;
-   margin-bottom: 2.0em
+   margin-bottom: 2.0em;
 }
 
 img {
