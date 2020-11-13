@@ -45,6 +45,11 @@ hr{
     border: 1px solid white;
 }
 
+p{
+    
+       text-align: center;
+}
+
 footer{
    margin-top: 2.0em;
    margin-bottom: 2.0em;
