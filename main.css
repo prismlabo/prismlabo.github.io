@@ -95,9 +95,15 @@ a:active {
         }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1242px) {
   .column {
     width: 100%;
+    text-align: center;
+      
+    margin-top: 1.0em;
+    margin-bottom: 1.0em;
+      
+      
   }
 }
 
