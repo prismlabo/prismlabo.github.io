@@ -14,18 +14,20 @@ body {
     padding: 1em 5em 2em;
 }
 
-h1{
-   font-size: 2.8em;
-   text-align: center;
+h1 {
+    font-size: 2.8em;
+    text-align: center;
 }
 
-h2{
-    
-
-}
+h2 {}
 
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #fff;
     font-weight: 600;
     line-height: 1;
@@ -36,7 +38,8 @@ a {
     color: #0083e8;
 }
 
-b, strong {
+b,
+strong {
     font-weight: 600;
 }
 
@@ -44,20 +47,38 @@ samp {
     display: none;
 }
 
-hr{
+hr {
     margin-top: 2.0em;
     margin-bottom: 2.0em;
     border: 1px solid white;
 }
 
-p{
-    
-       text-align: center;
+p {
+    text-align: center;
 }
 
-footer{
-   margin-top: 2.0em;
-   margin-bottom: 2.0em;
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(150, 150, 160);
+}
+
+a:active {
+    color: rgba(0, 255, 0);
+}
+
+
+footer {
+    margin-top: 2.0em;
+    margin-bottom: 2.0em;
 }
 
 img {
@@ -75,6 +96,7 @@ img {
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
     }
+
     100% {
         -webkit-filter: grayscale(0%);
         filter: grayscale(0%);
