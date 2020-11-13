@@ -8,7 +8,7 @@ body {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     color: #fff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-     font-size: 1.2em;
+    font-size: 1.2em;
     line-height: 1.5;
     margin: 0 auto;
     padding: 1em 5em 2em;
@@ -17,11 +17,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
     color: #fff;
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1;
 }
 
 h2 {
-    margin-top: 1.0em;
+    margin-top: 2.0em;
 }
 
 a {
@@ -34,6 +34,17 @@ b, strong {
 
 samp {
     display: none;
+}
+
+hr{
+    margin-top: 2.0em;
+    margin-bottom: 2.0em;
+    border: 1px solid white;
+}
+
+footer{
+   margin-top: 2.0em;
+   margin-bottom: 2.0em
 }
 
 img {
