@@ -128,11 +128,10 @@ a:active {
 
     p {
         text-align: center;
-        padding: 0em 2em 0em;
-
+        padding: 0em 2em 1em;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 1.5em;
-        line-height: 1.5;
+        line-height: 1.5em;
         margin: 0 auto;
     }
 
