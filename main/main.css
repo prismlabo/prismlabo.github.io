@@ -62,7 +62,7 @@ hr {
 
 p {
     text-align: center;
-    padding: 1em 2em 2em;
+    padding: 0em 2em 0em;
 }
 
 a:link {
@@ -107,7 +107,7 @@ body {
     font-size: 1.5em;
     line-height: 1.5;
     margin: 0 auto;
-    padding: 1em 0em 2em;
+    padding: 0em 0em 2em;
 }
 
 
