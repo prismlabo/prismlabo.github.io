@@ -23,8 +23,8 @@ h1 {
 
 h2 {
     text-align: center;
-    margin-top: 1.0em;
-    margin-bottom: 1.0em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 h1,
@@ -55,8 +55,7 @@ samp {
 }
 
 hr {
-    margin-top: 1.5em;
-    margin-bottom: 2em;
+
     border: 1px solid white;
 }
 
@@ -84,6 +83,7 @@ a:active {
 }
 
 .column {
+    text-align: center;
     float: left;
     width: 25%;
 }
@@ -99,23 +99,23 @@ a:active {
 @media screen and (max-width: 1242px) {
 
 
-body {
-    background: #000;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-    color: #fff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.0em;
-    line-height: 1.0em;
-    margin: 0 auto;
-    padding: 0em 0em 2em;
-}
+    body {
+        background: #000;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+        color: #fff;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 1.0em;
+        line-height: 1.0em;
+        margin: 0 auto;
+        padding: 0em 0em 2em;
+    }
 
 
     h1 {
         font-size: 3.0em;
         text-align: center;
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
+        margin-top: 1.0em;
+        margin-bottom: 1.0em;
     }
 
     h2 {
@@ -125,27 +125,25 @@ body {
         margin-top: 1.5em;
         margin-bottom: 1.5em;
     }
-    
+
     p {
-    text-align: center;
-    padding: 0em 2em 0em;
-        
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.5em;
-    line-height: 1.5;
-    margin: 0 auto;
+        text-align: center;
+        padding: 0em 2em 0em;
+
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 1.5em;
+        line-height: 1.5;
+        margin: 0 auto;
     }
-    
+
 
     .column {
 
-        font-size: 1.2em;
-
-        width: 100%;
+        font-size: 1.5em;
         text-align: center;
-
-        margin-top: 1.0em;
-        margin-bottom: 1.0em;
+        width: 100%;
+        margin-top: .5em;
+        margin-bottom: .5em;
 
     }
 
@@ -160,10 +158,6 @@ body {
 
 }
 
-footer {
-    margin-top: 2.0em;
-    margin-bottom: 2.0em;
-}
 
 img {
     animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
