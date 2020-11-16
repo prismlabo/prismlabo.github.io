@@ -75,11 +75,11 @@ a:visited {
 }
 
 a:hover {
-    color: rgba(150, 150, 160);
+    color: rgba(0, 255, 75);
 }
 
 a:active {
-    color: rgba(0, 0, 255);
+    color: rgba(105, 0, 255);
 }
 
 .column {
