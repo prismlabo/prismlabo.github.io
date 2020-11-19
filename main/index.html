@@ -1,84 +1,128 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PRISMLABO</title>
+    <meta name="description" content="2020 PrismLabo">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <h1><a href="https://prismlabo.github.io/main/index.html">PrismLabo</a></h1>
+    <hr>
+    <h2>ONLINE EXHIBITION IS COMING SOON!</h2>
+    <h2>2020. 11. 30 - 12. 30</h2>
+       <!--Counting D-day-->
+
+    <h2 id="demo">D - 9</h2>
     
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>PRISMLABO</title>
-        <meta name="description" content="2020 PrismLabo">
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-        
-        <h1><a href="https://prismlabo.github.io/main/index.html">PrismLabo</a></h1>
-        <hr>
-        <h2>ONLINE EXHIBITION IS COMING SOON!</h2>
-        <h2>2020. 11. 30 - 12. 30</h2>
-        <hr>
-        <h2>About</h2>
-        <div class="row">
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Nov 29, 2020 23:59:59").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + " Day " + hours + " Hour " +
+                minutes + " Min " + seconds + " Sec";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+
+    </script>
+
+    <hr>
+    <h2>About</h2>
+    <div class="row">
         <div class="column2">
-        <p>
-            <img src="data/logo.png" style="width:300px; height:300px;">
-        </p>
+            <p>
+                <img src="data/logo.png" style="width:300px; height:300px;">
+            </p>
         </div>
 
 
         <div class="column2">
-        <p style="text-align: left;">프리즘라보는 소그룹 내 3개의 팀이 각각 한 편 이상의 K-pop을 색다르게 재해석한 뮤직비디오를 제작한다. <br>기존의 획일화된 스타일의 뮤직비디오에서 벗어난 실험적인 비디오를 제작하여 최종적으로 상영회를 개최하는 것이 목표다. <br>
-        각각의 팀은 기존의 K-pop 뮤직비디오를 각각의 해석으로 새롭게 재탄생시킨다. <br>뮤직비디오는 단순히 스크린에 렌더링되는 2D 영상 뿐만 아니라 다양한 방식으로 구현 가능한 비디오의 형태로 제작된다. </p>
+            <p style="text-align: left;">프리즘라보는 소그룹 내 3개의 팀이 각각 한 편 이상의 K-pop을 색다르게 재해석한 뮤직비디오를 제작한다. <br>기존의 획일화된 스타일의 뮤직비디오에서 벗어난 실험적인 비디오를 제작하여 최종적으로 상영회를 개최하는 것이 목표다. <br>
+                각각의 팀은 기존의 K-pop 뮤직비디오를 각각의 해석으로 새롭게 재탄생시킨다. <br>뮤직비디오는 단순히 스크린에 렌더링되는 2D 영상 뿐만 아니라 다양한 방식으로 구현 가능한 비디오의 형태로 제작된다. </p>
         </div>
-        </div>
-        <hr>
+    </div>
+    <hr>
 
-        <h2>Our Team & Credit</h2>
-        <div class="row">
-        
+    <h2>Our Team & Credit</h2>
+    <div class="row">
+
         <div class="column2">
-        _
+            _
         </div>
-        
-        
+
+
         <div class="column2">
-        <p style="text-align: left;">
-        Black: 강유진, 이채원, 우예인<br>
-        Young and Rich: 김도연, 류현서, 한진희<br>
-        MinMiSoo: 조수민, 박지수, 안규미<br>
-        <br>
-        Art Director: 이채원<br>
-        Web Design: 강유진<br>
-        Web Development: 안규미<br>
-        </p>
+            <p style="text-align: left;">
+                Black: 강유진, 이채원, 우예인<br>
+                Young and Rich: 김도연, 류현서, 한진희<br>
+                MinMiSoo: 조수민, 박지수, 안규미<br>
+                <br>
+                Art Director: 이채원<br>
+                Web Design: 강유진<br>
+                Web Development: 안규미<br>
+            </p>
         </div>
-        
+
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="column">
+            <h3><a href="https://www.instagram.com/prism_labo/">Instagram</a></h3>
         </div>
-        
-        <hr>
-                
-        <div class="row">
-        <div class="column"><h3><a href="https://www.instagram.com/prism_labo/">Instagram</a></h3></div>
-        <div class="column"><h3><a href="https://www.youtube.com/">Youtube</a></h3></div>
-        <div class="column"><h3><a href="https://tumblbug.com/">Tumblbug</a></h3></div>
+        <div class="column">
+            <h3><a href="https://www.youtube.com/">Youtube</a></h3>
         </div>
-        <hr>
-        <footer>
+        <div class="column">
+            <h3><a href="https://tumblbug.com/">Tumblbug</a></h3>
+        </div>
+    </div>
+    <hr>
+    <footer>
         <div class="column2">
-        <p style="text-align: left;">
-        03760 서울특별시 서대문구 이화여대길 52 이화여자대학교<br>
-        ⓒ 2020 PrismLabo. All rights reserved.
-        </p>
+            <p style="text-align: left;">
+                03760 서울특별시 서대문구 이화여대길 52 이화여자대학교<br>
+                ⓒ 2020 PrismLabo. All rights reserved.
+            </p>
         </div>
         <div class="column2">
-        <p style="text-align: left;">
-        2020prismlabo@gmail.com
-        <br>
-        → Our <a href="https://github.com/prismlabo" style= "text-decoration: underline;">GitHub</a> is available.
-        </p>
+            <p style="text-align: left;">
+                2020prismlabo@gmail.com
+                <br>
+                → Our <a href="https://github.com/prismlabo" style="text-decoration: underline;">GitHub</a> is available.
+            </p>
         </div>
-        </footer>
-        
-        
-    </body>
+    </footer>
+
+
+</body>
+
 </html>
 <!--
 
