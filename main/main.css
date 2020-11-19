@@ -104,12 +104,8 @@ img:active {
     transform: rotate(180deg);
 }
 
-img2 {
-    transition: width 3s, height 3s, transform 3s;
-}
-
-img2:hover {
-
+img:hover {
+    transform: rotate(180deg);
     filter: drop-shadow(1px 1px 10px green);
 }
 
