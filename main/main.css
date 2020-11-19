@@ -185,6 +185,11 @@ img:hover {
         margin-bottom: 1.5em;
     }
 
+    iframe {
+        max-width: 50%;
+        max-height: 50%;
+    }
+
 
 }
 
@@ -192,10 +197,9 @@ img:hover {
 img {
     animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
     background: transparent;
-    border: 10px solid rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    display: block;
-    margin: 1.3em auto;
+    border: 5px solid rgba(0, 0, 0, 0);
+    /*display: block;*/
+    margin: 0em auto;
     max-width: 95%;
 }
 
