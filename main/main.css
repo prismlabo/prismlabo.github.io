@@ -60,7 +60,7 @@ hr {
 }
 
 p {
-    text-align: center;
+
     padding: 0em 2em 0em;
 }
 
@@ -87,6 +87,13 @@ a:active {
     float: left;
     width: 25%;
 }
+
+.column2 {
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+
 
 /* Clear floats after the columns */
 .row:after {
@@ -127,7 +134,7 @@ a:active {
     }
 
     p {
-        text-align: center;
+
         padding: 0em 2em 1em;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 1.5em;
@@ -146,9 +153,18 @@ a:active {
 
     }
 
+    .column2 {
+        text-align: center;
+        width: 100%;
+        margin-top: .5em;
+        margin-bottom: .5em;
+
+    }
+
 
 
     footer {
+        
         font-size: 1.0em;
         margin-top: 1.5em;
         margin-bottom: 1.5em;
@@ -170,12 +186,14 @@ img {
 
 @keyframes colorize {
     0% {
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
+        
+        -webkit-filter: opacity(0%);
+        filter: opacity(0%);
+       
     }
 
     100% {
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%);
+         -webkit-filter: opacity(100%);
+        filter: opacity(100%);
     }
 }
