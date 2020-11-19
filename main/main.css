@@ -94,19 +94,25 @@ a:active {
     width: 50%;
 }
 
+
 img {
-transition: width 3s, height 3s, transform 3s;
+    transition: width 3s, height 3s, transform 3s;
 }
 
-img2:hover{
-    
-    filter: drop-shadow(1px 1px 10px green);    
+img:active {
+
+    transform: rotate(180deg);
 }
 
-img:active{
-    
-  transform: rotate(180deg);
+img2 {
+    transition: width 3s, height 3s, transform 3s;
 }
+
+img2:hover {
+
+    filter: drop-shadow(1px 1px 10px green);
+}
+
 
 /* Clear floats after the columns */
 .row:after {
@@ -177,7 +183,7 @@ img:active{
 
 
     footer {
-        
+
         font-size: 1.0em;
         margin-top: 1.5em;
         margin-bottom: 1.5em;
@@ -200,14 +206,14 @@ img {
 /* Image effect */
 @keyframes colorize {
     0% {
-        
+
         -webkit-filter: opacity(0%);
         filter: opacity(0%);
-       
+
     }
 
     100% {
-         -webkit-filter: opacity(100%);
+        -webkit-filter: opacity(100%);
         filter: opacity(100%);
     }
 }
