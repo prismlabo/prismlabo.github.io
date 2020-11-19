@@ -102,7 +102,7 @@ a:active {
     clear: both;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* At mobile display */
 @media screen and (max-width: 1242px) {
 
 
@@ -184,6 +184,7 @@ img {
     max-width: 95%;
 }
 
+/* Image effect */
 @keyframes colorize {
     0% {
         
