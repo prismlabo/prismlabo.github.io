@@ -94,6 +94,19 @@ a:active {
     width: 50%;
 }
 
+img {
+transition: width 3s, height 3s, transform 3s;
+}
+
+img2:hover{
+    
+    filter: drop-shadow(1px 1px 10px green);    
+}
+
+img:active{
+    
+  transform: rotate(180deg);
+}
 
 /* Clear floats after the columns */
 .row:after {
