@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PRISMLABO</title>
+    <meta name="description" content="2020 PrismLabo">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <h1><a href="https://prismlabo.github.io/main/index.html">PrismLabo</a></h1>
+
+    <hr>
+    <h2>ONLINE SCREENING</h2>
+    <h2>2020.12.7 - 12.21</h2>
+    <!--Counting D-day-->
+
+    <h2 id="demo">D - 9</h2>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Dec 7, 2020 23:59:59").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + " d " + hours + " h " +
+                minutes + " m " + seconds + " s Left";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+
+    <hr>
+    <h2>ABOUT</h2>
+    <div class="row">
+        <p style="text-align: center;">
+            <img src="data/logo.png" style="width:40%; height:auto;">
+        </p>
+        <div class="column2">
+            <p style="text-align: left;">프리즘라보는 빛과 소리를 통해 다양한 실험을 하는 영상 실험실입니다.
+                영상매체를 통해 기존의 고정된 틀에서 벗어난 새로운 시각을 제시하고,
+                다양한 실험을 통해 재미있는 영상 프로젝트를 기획합니다.
+                팀원 각각의 스타일과 해석을 바탕으로 다채로운 영상을 제작하고자 합니다.</p>
+        </div>
+        <div class="column2">
+            <p style="text-align: left;">PRISMLABO is a video laboratory that conducts various experiments through light and sound.
+                Through video media, we propose new perspectives away from the existing fixed frame,
+                and we plan interesting video projects through various experiments.
+                Based on the style and interpretation of each team member, we are going to produce a variety of videos. </p>
+
+        </div>
+    </div>
+    <hr>
+    <h2>2020 Experimental K-MV Project</h2>
+
+    <p style="text-align: center;">
+        <strong>BLACK</strong><br>
+        강유진 우예인 이채원<br>
+        <br>
+        <strong>구름</strong><br>
+        김도연 류현서 한진희<br>
+        <br>
+        <strong>사려니</strong><br>
+        박지수 안규미 조수민<br>
+
+    </p>
+
+    <div class="row">
+        <!--
+        <h2 style="text-align: center;">Black</h2>
+        <p style="text-align: center;"><iframe width="1024" height="576" src="https://www.youtube.com/embed/gJlEF1ZEfbk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+        <br>
+        <h2 style="text-align: center;">Young and Rich</h2>
+        <p style="text-align: center;"><iframe width="1024" height="576" src="https://www.youtube.com/embed/kJwCWuXtYks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+        <br>
+        <h2 style="text-align: center;">MinMiSoo</h2>
+        <p style="text-align: center;"><iframe width="1024" height="576" src="https://www.youtube.com/embed/NZuhFUDwCBQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+        <br><br>-->
+        <hr>
+
+        <h2 style="text-align: center;">Coming Soon</h2>
+        <p style="text-align: center;">
+            <img src="data/cw.png" style="width:25%; height:auto;">
+
+            <img src="data/dh.png" style="width:25%; height:auto;">
+
+            <img src="data/gm.png" style="width:25%; height:auto;"><br>
+
+            <img src="data/hs.jpg" style="width:25%; height:auto;">
+
+            <img src="data/jh.jpg" style="width:25%; height:auto;">
+
+            <img src="data/js.jpg" style="width:25%; height:auto;"> <br>
+
+            <img src="data/sm.png" style="width:25%; height:auto;">
+
+            <img src="data/yi.jpg" style="width:25%; height:auto;">
+
+            <img src="data/yj.png" style="width:25%; height:auto;">
+        </p><br>
+        <br>
+
+    </div>
+
+
+    <hr>
+
+    <div class="row">
+        <div class="column">
+            <h3><a href="https://www.instagram.com/prism_labo/">Instagram</a></h3>
+        </div>
+        <div class="column">
+            <h3><a href="https://www.youtube.com/">Youtube</a></h3>
+        </div>
+
+    </div>
+    <hr>
+    <footer>
+        <div class="column2">
+            <p style="text-align: left;">
+                03760 서울특별시 서대문구 이화여대길 52 이화여자대학교<br>
+                ⓒ 2020 PrismLabo. All rights reserved.<br>
+                2020prismlabo@gmail.com
+            </p>
+        </div>
+        <div class="column2">
+            <p style="text-align: left;">
+
+                Web Development By 안규미<br>
+                → Our <a href="https://github.com/prismlabo" style="text-decoration: underline;">GitHub</a> is available.
+            </p>
+        </div>
+    </footer>
+
+
+</body></html>
+<!--
+
+created by gyumi
+
+-->
