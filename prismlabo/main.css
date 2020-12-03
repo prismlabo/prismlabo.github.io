@@ -11,7 +11,7 @@ body {
     font-size: 1.5em;
     line-height: 1.5;
     margin: 0 auto;
-    padding: 0em 0em 0em;
+    padding: 0em 5em 0em;
 }
 
 h1 {
@@ -33,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-
+    text-align: left;
     color: #000;
     font-weight: 600;
     line-height: 0;
@@ -148,6 +148,20 @@ img:hover {
         margin-bottom: 1.5em;
     }
 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-align: center;
+        color: #000;
+        font-weight: 600;
+        line-height: 0;
+
+    }
+
+
     p {
 
         padding: 0em 2em 1em;
@@ -179,7 +193,7 @@ img:hover {
 
 
     footer {
-
+        text-align: center;
         font-size: 1.0em;
         margin-top: 1.5em;
         margin-bottom: 1.5em;
