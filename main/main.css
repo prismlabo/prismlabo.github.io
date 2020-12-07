@@ -117,6 +117,20 @@ img:hover {
     clear: both;
 }
 
+iframe {
+    filter: grayscale(100%) brightness(0.6);
+}
+
+
+
+
+iframe:hover {
+
+    filter: grayscale(0%) opacity(80%);
+
+}
+
+
 /* At mobile display */
 @media screen and (max-width: 1242px) {
 
@@ -187,6 +201,16 @@ img:hover {
     iframe {
         max-width: 560px;
         max-height: auto;
+        filter: grayscale(100%) brightness(0.6);
+    }
+
+
+
+
+    iframe:hover {
+
+        filter: grayscale(0%) opacity(80%);
+
     }
 
 
