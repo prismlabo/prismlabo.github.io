@@ -118,7 +118,7 @@ img:hover {
 }
 
 iframe {
-    filter: grayscale(100%) brightness(0.6);
+    filter: grayscale(100%);
 }
 
 
@@ -126,7 +126,7 @@ iframe {
 
 iframe:hover {
 
-    filter: grayscale(0%) opacity(80%);
+    filter: grayscale(0%);
 
 }
 
@@ -201,7 +201,7 @@ iframe:hover {
     iframe {
         max-width: 560px;
         max-height: auto;
-        filter: grayscale(100%) brightness(0.6);
+        filter: grayscale(100%);
     }
 
 
@@ -209,7 +209,7 @@ iframe:hover {
 
     iframe:hover {
 
-        filter: grayscale(0%) opacity(80%);
+        filter: grayscale(0%);
 
     }
 
