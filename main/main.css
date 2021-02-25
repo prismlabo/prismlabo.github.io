@@ -21,43 +21,41 @@ body {
     top: 0;
     width: 100%;
     z-index: 1;
-    border: 2px solid black;
+    border: 2px solid #000;
     box-sizing: border-box;
 }
 
 .txt-nav {
     overflow: hidden;
-    color: #000;
-    background-color: #64ff01;
+    color: #64ff01;
     top: 0;
     width: 100%;
     z-index: 1;
-    border: 1px solid black;
+    border: 1px solid #000;
     box-sizing: border-box;
 }
 
 /* Style the tab */
 .tab {
     overflow: hidden;
-    border: 1px solid #000;
-    background-color: #64ff01;
+
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-    background-color: inherit;
+    background-color: #64ff01;
+    color: #000;
     outline: none;
     cursor: pointer;
-    padding: 1em 1em 1em;
+    padding: .5em .5em .5em;
     transition: 0.3s;
     text-align: center;
     border-radius: 40px;
+    border: 2px solid black;
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #6401ff;
-}
+.tab button:hover {}
 
 /* Create an active/current tablink class */
 .tab button.active {
@@ -69,7 +67,7 @@ body {
     color: aliceblue;
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #000;
     border-top: none;
 }
 
@@ -82,7 +80,7 @@ body {
     left: 0;
     background-color: #64ff01;
     overflow-x: hidden;
-    border: 2px solid black;
+    border: 2px solid #000;
     box-sizing: border-box;
 }
 
@@ -159,7 +157,6 @@ a:active {
 
 .column {
     text-align: left;
-    width: 100%;
     line-height: 1.5em;
     float: left;
     width: 50%;
@@ -191,14 +188,16 @@ img {
     transition: width 3s, height 3s, transform 3s;
     z-index: -1;
     cursor: pointer;
+    border: 1em solid rgba(0, 0, 0, 0);
 }
 
 img:active {
-    transform: rotate(180deg);
+    transform: rotateZ(90deg);
+    /* transform: rotate(180deg); */
 }
 
 img:hover {
-    transform: rotate(180deg);
+    transform: rotateZ(90deg);
     filter: drop-shadow(1px 1px 10px #64ff01);
 }
 
@@ -217,15 +216,6 @@ iframe:hover {
     filter: grayscale(0%);
 }
 
-img {
-    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
-    background: transparent;
-    border: 5px solid rgba(0, 0, 0, 0);
-    /*display: block;*/
-    margin: 0em auto;
-    max-width: 95%;
-}
-
 .footer {
     position: inherit;
     left: 0;
@@ -234,7 +224,7 @@ img {
     background-color: #64ff01;
     color: #000;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid #000;
     box-sizing: border-box;
 }
 
@@ -252,7 +242,7 @@ img {
 }
 
 /* At mobile display */
-@media screen and (max-width: 981px) {
+@media screen and (max-width: 1242px) {
     /* 1242px */
 
     body {
@@ -271,14 +261,21 @@ img {
 
     h2 {
         font-size: 1.em;
-        text-align: center;
     }
 
     p {
-        padding: 0em 2em 0em;
         font-size: 1.5em;
         line-height: 1.5em;
     }
+
+
+    img {
+        transition: width 3s, height 3s, transform 3s;
+        z-index: -1;
+        cursor: pointer;
+        border: 1em solid rgba(0, 0, 0, 0);
+    }
+
 
     .column {
         text-align: left;
