@@ -94,13 +94,13 @@
         <button style="background: #64ff01; border: 2px solid black;">
             <h2>K-MV PRJ</h2>
         </button>
-        <button class="tablinks" onclick="openCity(event, 'BLACK')">
+        <button class="tablinks" onclick="openProj(event, 'BLACK')">
             <h2>#BLACK</h2>
         </button>
-        <button class="tablinks" onclick="openCity(event, 'CLOUD')">
+        <button class="tablinks" onclick="openProj(event, 'CLOUD')">
             <h2>#CLOUD</h2>
         </button>
-        <button class="tablinks" onclick="openCity(event, 'SARYEONI')">
+        <button class="tablinks" onclick="openProj(event, 'SARYEONI')">
             <h2>#SARYEONI</h2>
         </button>
     </div>
@@ -124,7 +124,7 @@
     </div>
 
     <script>
-        function openCity(evt, cityName) {
+        function openProj(evt, pojName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
@@ -134,7 +134,7 @@
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].className = tablinks[i].className.replace(" active", "");
             }
-            document.getElementById(cityName).style.display = "block";
+            document.getElementById(pojName).style.display = "block";
             evt.currentTarget.className += " active";
         }
     </script>
