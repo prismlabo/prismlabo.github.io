@@ -53,7 +53,6 @@
                 var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
                 // Output the result in an element with id="demo"
                 document.getElementById("demo").innerHTML = "&lt;!-- ONLINE SCREENING " + days + "D " + hours + "H " +
                     minutes + "M " + seconds + "S LEFT --&gt";
@@ -69,7 +68,7 @@
     <hr style="border: 1px solid black;">
 
     <p style="text-align: center;">
-        <img src="data/logo.png" style="width:30%; height:auto;">
+        <img src="data/logo.png" alt="LOGO" class="responsive-img"  >
     </p>
 
     <div class="tab">
