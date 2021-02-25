@@ -68,31 +68,36 @@
     </div>
     <hr style="border: 1px solid black;">
 
-    <div class="row">
-        <p style="text-align: center;">
-            <img src="data/logo.png" style="width:30%; height:auto;">
-        </p>
+    <p style="text-align: center;">
+        <img src="data/logo.png" style="width:30%; height:auto;">
+    </p>
 
-        <div class="txt-nav">
-            <h2 style="color: #000;">ABOUT</h2>
-            <div class="column2">
-                <p style="text-align: left;">프리즘라보는 빛과 소리를 통해 다양한 실험을 하는 영상 실험실입니다. <br>
-                    영상매체를 통해 기존의 고정된 틀에서 벗어난 새로운 시각을 제시하고, 다양한 실험을 통해 재미있는 영상 프로젝트를 기획합니다. <br>
-                    팀원 각각의 스타일과 해석을 바탕으로 다채로운 영상을 제작하고자 합니다.</p>
-            </div>
-            <div class="column2">
-                <p style="text-align: left;">PRISMLABO is a video laboratory that conducts various experiments through light and sound. <br>
-                    Through video media, we propose new perspectives away from the existing fixed frame,
-                    and we plan interesting video projects through various experiments. <br>
-                    Based on the style and interpretation of each team member, we are going to produce a variety of videos. </p>
+    <div class="tab">
+        <button class="tablinks" onclick="openProj(event, 'ABOUT')">
+            <h2 style="color: #000;">&lt;! ABOUT &gt;</h2>
+        </button>
+        <button class="tablinks" onclick="openProj(event, '#')">
+            <h2>Ｘ</h2>
+        </button>
+    </div>
 
-            </div>
+    <div id="ABOUT" class="tabcontent">
+        <div class="column2">
+            <p>프리즘라보는 빛과 소리를 통해 다양한 실험을 하는 영상 실험실입니다. <br>
+                영상매체를 통해 기존의 고정된 틀에서 벗어난 새로운 시각을 제시하고, 다양한 실험을 통해 재미있는 영상 프로젝트를 기획합니다. <br>
+                팀원 각각의 스타일과 해석을 바탕으로 다채로운 영상을 제작하고자 합니다.</p>
+        </div>
+        <div class="column2">
+            <p>PRISMLABO is a video laboratory that conducts various experiments through light and sound. <br>
+                Through video media, we propose new perspectives away from the existing fixed frame,
+                and we plan interesting video projects through various experiments. <br>
+                Based on the style and interpretation of each team member, we are going to produce a variety of videos. </p>
         </div>
     </div>
 
     <div class="tab">
-        <button style="background: #64ff01; border: 2px solid black;">
-            <h2>K-MV PRJ</h2>
+        <button class="tablinks" onclick="openProj(event, 'KMV-PRJ')">
+            <h2>&lt;! K-MV PROJECT &gt;</h2>
         </button>
         <button class="tablinks" onclick="openProj(event, 'BLACK')">
             <h2>#BLACK</h2>
@@ -103,6 +108,14 @@
         <button class="tablinks" onclick="openProj(event, 'SARYEONI')">
             <h2>#SARYEONI</h2>
         </button>
+        <button class="tablinks" onclick="openProj(event, '#')">
+            <h2>Ｘ</h2>
+        </button>
+    </div>
+
+    <div id="KMV-PRJ" class="tabcontent">
+        <h2>KPOP 영상 실험실</h2>
+        <p>3명 씩 3개의 팀을 만들고 각 팀별로 케이팝 뮤직비디오를 제작하는 프로젝트. </p>
     </div>
 
     <div id="BLACK" class="tabcontent">
@@ -112,39 +125,70 @@
     </div>
 
     <div id="CLOUD" class="tabcontent">
-        <h3>CLOUD</h3>
+        <h2>CLOUD</h2>
         <p>김도연 류현서 한진희</p>
         <iframe width="1280" height="720" src="https://www.youtube.com/embed/O-GE0a7hFXw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div id="SARYEONI" class="tabcontent">
-        <h3>SARYEONI</h3>
+        <h2>SARYEONI</h2>
         <p>박지수 안규미 조수민</p>
         <iframe width="1280" height="720" src="https://www.youtube.com/embed/wP53cvpmiko" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-    <script>
-        function openProj(evt, pojName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(pojName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>
+    <div class="tab">
+        <button class="tablinks" onclick="openProj(event, 'MAD-PROJ')">
+            <h2 style="color: #000;">&lt;! MAD PROJECT &gt;</h2>
+        </button>
 
-    <div class="row">
-        <h2>Coming Soon</h2>
+        <button class="tablinks" onclick="openProj(event, 'YUJIN-KANG')">
+            <h2>#YUJIN-KANG</h2>
+        </button>
+
+        <button class="tablinks" onclick="openProj(event, 'YEIN-WOO')">
+            <h2>#YEIN-WOO</h2>
+        </button>
+
+        <button class="tablinks" onclick="openProj(event, 'CHAEWON-LEE')">
+            <h2>#CHAEWON-LEE</h2>
+        </button>
+
+        <button class="tablinks" onclick="openProj(event, 'DOYEON-KIM')">
+            <h2>#DOYEON-KIM</h2>
+        </button>
+
+        <button class="tablinks" onclick="openProj(event, 'HYUNSEO-RYU')">
+            <h2>#HYUNSEO-RYU</h2>
+        </button>
+
+        <button class="tablinks" onclick="openProj(event, 'JINHEE-HAN')">
+            <h2>#JINHEE-HAN</h2>
+        </button>
+
+        <button class="tablinks" onclick="openProj(event, 'JISOO-PARK')">
+            <h2>#JISOO-PARK</h2>
+        </button>
+
+        <button class="tablinks" onclick="openProj(event, 'GYUMI-AN')">
+            <h2>#GYUMI-AN</h2>
+        </button>
+
+        <button class="tablinks" onclick="openProj(event, 'SUMIN-CHO')">
+            <h2>#SUMIN-CHO</h2>
+        </button>
+
+        <button class="tablinks" onclick="openProj(event, '#')">
+            <h2>Ｘ</h2>
+        </button>
+    </div>
+
+    <div id="MAD-PROJ" class="tabcontent">
+        <h2>MAD 개인 실험실</h2>
+        <p style="text-align: left;">작가 개개인의 개성이 담긴 작품으로 구성된 실험실. </p>
         <p style="text-align: center;">
             <img src="data/cw.png" style="width:25%; height:auto;">
 
-            <img src="data/dh.png" style="width:25%; height:auto;">
+            <img src="data/dy.png" style="width:25%; height:auto;">
 
             <img src="data/gm.png" style="width:25%; height:auto;">
 
@@ -164,7 +208,60 @@
 
             <img src="data/yj.png" style="width:25%; height:auto;">
         </p><br>
-        <br>
+    </div>
+
+    <div id="YUJIN-KANG" class="tabcontent">
+        <h2>YUJIN-KANG</h2>
+        <p>강유진</p>
+        <img src="data/yj.png" style="width:25%; height:auto;">
+    </div>
+
+    <div id="YEIN-WOO" class="tabcontent">
+        <h2>YEIN-WOO</h2>
+        <p>우예인</p>
+        <img src="data/yi.jpg" style="width:25%; height:auto;">
+    </div>
+
+    <div id="CHAEWON-LEE" class="tabcontent">
+        <h2>CHAEWON-LEE</h2>
+        <p>이채원</p>
+        <img src="data/cw.png" style="width:25%; height:auto;">
+    </div>
+
+    <div id="DOYEON-KIM" class="tabcontent">
+        <h2>DOYEON-KIM</h2>
+        <p>김도연</p>
+        <img src="data/dy.png" style="width:25%; height:auto;">
+    </div>
+
+    <div id="HYUNSEO-RYU" class="tabcontent">
+        <h2>HYUNSEO-RYU</h2>
+        <p>류현서</p>
+        <img src="data/hs.jpg" style="width:25%; height:auto;">
+    </div>
+
+    <div id="JINHEE-HAN" class="tabcontent">
+        <h2>JINHEE-HAN</h2>
+        <p>한진희</p>
+        <img src="data/jh.jpg" style="width:25%; height:auto;">
+    </div>
+
+    <div id="JISOO-PARK" class="tabcontent">
+        <h2>JISOO-PARK</h2>
+        <p>박지수</p>
+        <img src="data/js.jpg" style="width:25%; height:auto;">
+    </div>
+
+    <div id="GYUMI-AN" class="tabcontent">
+        <h2>GYUMI-AN</h2>
+        <p>안규미</p>
+        <img src="data/gm.png" style="width:25%; height:auto;">
+    </div>
+
+    <div id="SUMIN-CHO" class="tabcontent">
+        <h2>SUMIN-CHO</h2>
+        <p>조수민</p>
+        <img src="data/sm.png" style="width:25%; height:auto;">
     </div>
 
     <!--
@@ -178,6 +275,22 @@
 
     </div>
     -->
+    <script>
+        function openProj(evt, pojName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(pojName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
     <div class="column">
         <div class="footer">
             <p style="text-align: left;">
