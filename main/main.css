@@ -193,6 +193,13 @@ img {
     cursor: pointer;
     border: 1em solid rgba(0, 0, 0, 0);
     opacity: 1;
+    text-align: center;
+}
+
+.responsive-img {
+    width: 35%;
+    height: auto;
+    text-align: center;
 }
 
 img:active {
@@ -272,7 +279,6 @@ iframe:hover {
         line-height: 1.5em;
     }
 
-
     img {
         transition: width 3s, height 3s, transform 3s;
         z-index: -1;
@@ -280,6 +286,11 @@ iframe:hover {
         border: 1em solid rgba(0, 0, 0, 0);
     }
 
+    .responsive-img {
+        width: 50%;
+        height: auto;
+        text-align: center;
+    }
 
     .column {
         text-align: left;
