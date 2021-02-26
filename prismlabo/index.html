@@ -7,129 +7,318 @@
     <title>PRISMLABO</title>
     <meta name="description" content="2020 PrismLabo">
     <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="https://github.com/prismlabo/prismlabo.github.io/blob/main/main/data/logo.png?raw=true">
 </head>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
 </style>
 
 <body>
 
-    <h1><a href="https://prismlabo.github.io/main/index.html">PRISMLABO</a></h1>
+    <!--Top Nav & Counting D-day-->
+    <div class="top-nav">
 
-    <hr>
-    <h2>ONLINE SCREENING IS COMMING SOON</h2>
-    <h2>2020.12.7 - 12.21</h2>
-    <!--Counting D-day-->
+        <div class="column">
+            <p id="demo">
+                &lt;!--Counting D-day--&gt;
+            </p>
+        </div>
+        <div class="column">
+            <p style="text-align:right;"><a href=" https://prismlabo.github.io/main/index.html">&lt;!-- PRISMLABO --&gt;</a></p>
+        </div>
 
-    <h2 id="demo">D - 9</h2>
-
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Dec 7, 2020 23:59:59").getTime();
-
-        // Update the count down every 1 second
-        var x = setInterval(function() {
-
-            // Get today's date and time
-            var now = new Date().getTime();
-
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
-
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Output the result in an element with id="demo"
-            document.getElementById("demo").innerHTML = days + " d " + hours + " h " +
-                minutes + " m " + seconds + " s Left";
-
-            // If the count down is over, write some text 
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
-            }
-        }, 1000);
-    </script>
-
-    <hr style="border: 1px solid #000;">
-    <h2>ABOUT</h2>
-    <div class="row">
+        <hr>
         <p style="text-align: center;">
-            <img src="data/logo.png" style="width:40%; height:auto;">
+            <img src="data/logo.png" alt="LOGO" class="responsive-img">
         </p>
+
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Feb 28, 2021 23:59:59").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+                // Get today's date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                // Output the result in an element with id="demo"
+                document.getElementById("demo").innerHTML = "&lt;!-- ONLINE SCREENING " + days + "D " + hours + "H " +
+                    minutes + "M " + seconds + "S LEFT --&gt";
+
+                // If the count down is over, write some text 
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "ONLINE SCREENING 2021.3.1 - 3.7";
+                }
+            }, 1000);
+        </script>
+    </div>
+
+
+    <div class="tab">
+        <button class="tablinks" onclick="openProj(event, 'ABOUT')">
+            <h2>&lt;! ABOUT &gt;</h2>
+        </button>
+        <button class="tablinks" onclick="openProj(event, '#')">
+            <h2>Ｘ</h2>
+        </button>
+    </div>
+
+    <div id="ABOUT" class="tabcontent">
+        <h2>PRISMLABO</h2>
         <div class="column2">
-            <p style="text-align: left;">프리즘라보는 빛과 소리를 통해 다양한 실험을 하는 영상 실험실입니다.
-                영상매체를 통해 기존의 고정된 틀에서 벗어난 새로운 시각을 제시하고,
-                다양한 실험을 통해 재미있는 영상 프로젝트를 기획합니다.
+            <p>PRISMLABO는 빛과 소리를 통해 다양한 실험을 하는 영상 실험실입니다. <br>
+                영상매체를 통해 기존의 고정된 틀에서 벗어난 새로운 시각을 제시하고, 다양한 실험을 통해 재미있는 영상 프로젝트를 기획합니다. <br>
                 팀원 각각의 스타일과 해석을 바탕으로 다채로운 영상을 제작하고자 합니다.</p>
         </div>
         <div class="column2">
-            <p style="text-align: left;">PRISMLABO is a video laboratory that conducts various experiments through light and sound.
+            <p>PRISMLABO is a video laboratory that conducts various experiments through light and sound. <br>
                 Through video media, we propose new perspectives away from the existing fixed frame,
-                and we plan interesting video projects through various experiments.
+                and we plan interesting video projects through various experiments. <br>
                 Based on the style and interpretation of each team member, we are going to produce a variety of videos. </p>
-
         </div>
     </div>
-    <hr style="border: 1px solid #000;">
-    <h2>2020 Experimental K-MV Project</h2>
 
-    <p style="text-align: center;">
-        <strong>BLACK</strong><br>
-        강유진 우예인 이채원<br>
-        <br>
-        <strong>구름</strong><br>
-        김도연 류현서 한진희<br>
-        <br>
-        <strong>사려니</strong><br>
-        박지수 안규미 조수민<br>
+    <div class="tab">
+        <button class="tablinks" onclick="openProj(event, 'KMV-PRJ')">
+            <h2>&lt;! K-MV PROJECT &gt;</h2>
+        </button>
+        <button class="tablinks" onclick="openProj(event, '#')">
+            <h2>Ｘ</h2>
+        </button>
+    </div>
 
-    </p>
+    <div id="KMV-PRJ" class="tabcontent">
+        <p>PRISMLABO의 팀원 3명씩 3개의 팀을 만들고 각 팀별로 케이팝 뮤직비디오를 제작하는 프로젝트.</p>
+        <div class="tab">
+            <button class="tablinks" onclick="openProj(event, 'BLACK')">
+                <h2>#BLACK</h2>
+            </button>
+            <button class="tablinks" onclick="openProj(event, 'CLOUD')">
+                <h2>#CLOUD</h2>
+            </button>
+            <button class="tablinks" onclick="openProj(event, 'SARYEONI')">
+                <h2>#SARYEONI</h2>
+            </button>
+        </div>
 
-    <div class="row">
-        <!--
-        <h2 style="text-align: center;">Black</h2>
-        <p style="text-align: center;"><iframe width="1024" height="576" src="https://www.youtube.com/embed/gJlEF1ZEfbk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-        <br>
-        <h2 style="text-align: center;">Young and Rich</h2>
-        <p style="text-align: center;"><iframe width="1024" height="576" src="https://www.youtube.com/embed/kJwCWuXtYks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-        <br>
-        <h2 style="text-align: center;">MinMiSoo</h2>
-        <p style="text-align: center;"><iframe width="1024" height="576" src="https://www.youtube.com/embed/NZuhFUDwCBQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-        <br><br>-->
-        <hr style="border: 1px solid #000;">
+    </div>
 
-        <h2>Coming Soon</h2>
+    <div id="BLACK" class="tabcontent">
+        <div class="tab">
+            <button class="tablinks" onclick="openProj(event, 'BLACK')">
+                <h2>#BLACK</h2>
+            </button>
+            <button class="tablinks" onclick="openProj(event, 'CLOUD')">
+                <h2>#CLOUD</h2>
+            </button>
+            <button class="tablinks" onclick="openProj(event, 'SARYEONI')">
+                <h2>#SARYEONI</h2>
+            </button>
+        </div>
+        <h2>BLACK</h2>
+        <p>강유진 우예인 이채원</p>
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/AR9Ritexsi0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div id="CLOUD" class="tabcontent">
+        <h2>CLOUD</h2>
+        <p>김도연 류현서 한진희</p>
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/O-GE0a7hFXw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div id="SARYEONI" class="tabcontent">
+        <h2>SARYEONI</h2>
+        <p>박지수 안규미 조수민</p>
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/wP53cvpmiko" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openProj(event, 'MAD-PROJ')">
+            <h2>&lt;! MAD PROJECT &gt;</h2>
+        </button>
+
+        <button class="tablinks" onclick="openProj(event, '#')">
+            <h2>Ｘ</h2>
+        </button>
+    </div>
+
+    <div id="MAD-PROJ" class="tabcontent">
+
+        <p style="text-align: left;">PRISMLABO 구성원 개개인의 개성이 담긴 실험실입니다. <br>
+            스티커를 클릭하면 작가 개인 페이지로 이동합니다. </p><br>
+
+        <div class="tab">
+
+            <button class="tablinks" Alt onclick="openProj(event, 'YUJIN-KANG')">
+                <h2>#YUJIN-KANG</h2>
+            </button>
+
+            <button class="tablinks" onclick="openProj(event, 'YEIN-WOO')">
+                <h2>#YEIN-WOO</h2>
+            </button>
+
+            <button class="tablinks" onclick="openProj(event, 'CHAEWON-LEE')">
+                <h2>#CHAEWON-LEE</h2>
+            </button>
+
+            <button class="tablinks" onclick="openProj(event, 'DOYEON-KIM')">
+                <h2>#DOYEON-KIM</h2>
+            </button>
+
+            <button class="tablinks" onclick="openProj(event, 'HYUNSEO-RYU')">
+                <h2>#HYUNSEO-RYU</h2>
+            </button>
+
+            <button class="tablinks" onclick="openProj(event, 'JINHEE-HAN')">
+                <h2>#JINHEE-HAN</h2>
+            </button>
+
+            <button class="tablinks" onclick="openProj(event, 'JISOO-PARK')">
+                <h2>#JISOO-PARK</h2>
+            </button>
+
+            <button class="tablinks" onclick="openProj(event, 'GYUMI-AN')">
+                <h2>#GYUMI-AN</h2>
+            </button>
+
+            <button class="tablinks" onclick="openProj(event, 'SUMIN-CHO')">
+                <h2>#SUMIN-CHO</h2>
+            </button>
+
+        </div>
+
         <p style="text-align: center;">
-            <img src="data/cw.png" style="width:25%; height:auto;">
+            <img src="data/cw.png" alt="CHAEWON-LEE" style="width:25%; height:auto;">
 
-            <img src="data/dh.png" style="width:25%; height:auto;">
+            <img src="data/dy.png" style="width:25%; height:auto;">
 
-            <img src="data/gm.png" style="width:25%; height:auto;"><br>
+            <img src="data/gm.png" style="width:25%; height:auto;">
+
+            <br>
 
             <img src="data/hs.jpg" style="width:25%; height:auto;">
 
             <img src="data/jh.jpg" style="width:25%; height:auto;">
 
-            <img src="data/js.jpg" style="width:25%; height:auto;"> <br>
+            <img src="data/js.jpg" style="width:25%; height:auto;">
+
+            <br>
 
             <img src="data/sm.png" style="width:25%; height:auto;">
 
             <img src="data/yi.jpg" style="width:25%; height:auto;">
 
             <img src="data/yj.png" style="width:25%; height:auto;">
-        </p><br>
-        <br>
+        </p>
 
     </div>
 
+    <div class="tab">
 
-    <hr style="border: 1px solid #000;">
+        <button class="tablinks" Alt onclick="openProj(event, 'YUJIN-KANG')">
+            <h2>#YUJIN-KANG</h2>
+        </button>
 
+        <button class="tablinks" onclick="openProj(event, 'YEIN-WOO')">
+            <h2>#YEIN-WOO</h2>
+        </button>
+
+        <button class="tablinks" onclick="openProj(event, 'CHAEWON-LEE')">
+            <h2>#CHAEWON-LEE</h2>
+        </button>
+
+        <button class="tablinks" onclick="openProj(event, 'DOYEON-KIM')">
+            <h2>#DOYEON-KIM</h2>
+        </button>
+
+        <button class="tablinks" onclick="openProj(event, 'HYUNSEO-RYU')">
+            <h2>#HYUNSEO-RYU</h2>
+        </button>
+
+        <button class="tablinks" onclick="openProj(event, 'JINHEE-HAN')">
+            <h2>#JINHEE-HAN</h2>
+        </button>
+
+        <button class="tablinks" onclick="openProj(event, 'JISOO-PARK')">
+            <h2>#JISOO-PARK</h2>
+        </button>
+
+        <button class="tablinks" onclick="openProj(event, 'GYUMI-AN')">
+            <h2>#GYUMI-AN</h2>
+        </button>
+
+        <button class="tablinks" onclick="openProj(event, 'SUMIN-CHO')">
+            <h2>#SUMIN-CHO</h2>
+        </button>
+
+    </div>
+
+    <div id="YUJIN-KANG" class="tabcontent">
+        <h2>YUJIN-KANG</h2>
+        <p>강유진</p>
+        <img src="data/yj.png" alt="YUJIN-KANG" style="width:25%; height:auto;">
+    </div>
+
+    <div id="YEIN-WOO" class="tabcontent">
+        <h2>YEIN-WOO</h2>
+        <p>우예인</p>
+        <img src="data/yi.jpg" alt="YEIN-WOO" style="width:25%; height:auto;">
+    </div>
+
+    <div id="CHAEWON-LEE" class="tabcontent">
+        <h2>CHAEWON-LEE</h2>
+        <p>이채원</p>
+        <img src="data/cw.png" alt="CHAEWON-LEE" style="width:25%; height:auto;">
+    </div>
+
+    <div id="DOYEON-KIM" class="tabcontent">
+        <h2>DOYEON-KIM</h2>
+        <p>김도연</p>
+        <img src="data/dy.png" alt="DOYEON-KIM" style="width:25%; height:auto;">
+    </div>
+
+    <div id="HYUNSEO-RYU" class="tabcontent">
+        <h2>HYUNSEO-RYU</h2>
+        <p>류현서</p>
+        <img src="data/hs.jpg" alt="HYUNSEO-RYU" style="width:25%; height:auto;">
+    </div>
+
+    <div id="JINHEE-HAN" class="tabcontent">
+        <h2>JINHEE-HAN</h2>
+        <p>한진희</p>
+        <img src="data/jh.jpg" alt="JINHEE-HAN" style="width:25%; height:auto;">
+    </div>
+
+    <div id="JISOO-PARK" class="tabcontent">
+        <h2>JISOO-PARK</h2>
+        <p>박지수</p>
+        <img src="data/js.jpg" alt="JISOO-PARK" style="width:25%; height:auto;">
+    </div>
+
+    <div id="GYUMI-AN" class="tabcontent">
+        <h2>GYUMI-AN</h2>
+        <p>안규미</p>
+        <img src="data/gm.png" alt="GYUMI-AN" style="width:25%; height:auto;">
+    </div>
+
+    <div id="SUMIN-CHO" class="tabcontent">
+        <h2>SUMIN-CHO</h2>
+        <p>조수민</p>
+        <img src="data/sm.png" alt="SUMIN-CHO" style="width:25%; height:auto;">
+    </div>
+
+    <!--
     <div class="row">
         <div class="column">
             <h3><a href="https://www.instagram.com/prism_labo/">Instagram</a></h3>
@@ -139,28 +328,69 @@
         </div>
 
     </div>
-    <hr style="border: 1px solid #000;">
-    <footer>
-        <div class="column2">
-            <p style="text-align: left;">
-                03760 서울특별시 서대문구 이화여대길 52 이화여자대학교<br>
-                ⓒ 2020 PrismLabo. All rights reserved.<br>
-                2020prismlabo@gmail.com
-            </p>
-        </div>
-        <div class="column2">
-            <p style="text-align: left;">
+    -->
+    <script>
+        function openProj(evt, pojName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(pojName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 
-                Web Development By 안규미<br>
-                → Our <a href="https://github.com/prismlabo" style="text-decoration: underline;">GitHub</a> is available.
-            </p>
-        </div>
-    </footer>
 
+    <div class="tab">
+        <button class="tablinks" onclick="openProj(event, 'CONTACT')">
+            <h2>&lt;! CONTACT &gt;</h2>
+        </button>
+        <button class="tablinks" onclick="openProj(event, '#')">
+            <h2>Ｘ</h2>
+        </button>
+    </div>
+
+    <div id="CONTACT" class="tabcontent">
+        <p>
+            INSTAGRAM<br>
+            YOUTUBE<br>
+            GITHUB<br>
+            GMAIL<br>
+        </p>
+    </div>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openProj(event, 'C')">
+            <h2>&lt;! ⓒ &gt;</h2>
+        </button>
+        <button class="tablinks" onclick="openProj(event, '#')">
+            <h2>Ｘ</h2>
+        </button>
+    </div>
+
+    <div id="C" class="tabcontent">
+        <p>
+            College of Art & Design, Ewha Womans University<br>
+            52, Ewhayeodae-gil, Seodaemun-gu, Seoul, Republic of Korea<br>
+            2020prismlabo@gmail.com<br>
+            ⓒPrismLabo. All rights reserved.
+        </p>
+    </div>
 
 </body></html>
 <!--
-
-created by gyumi
-
+feedback: 
+이미지 호버
+디데이 텍스트 슬라이드
+메인 사이트 / 키비주얼 
+개별 사이트 디자인
+유튜브 프레임 디자인
+링크 이미지 
+PC / IOS / 안드로이드 웹 테스트 
+유튜브 / 인스타 / 깃허브 탭과 아이콘
 -->
