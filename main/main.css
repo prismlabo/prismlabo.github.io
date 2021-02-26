@@ -313,9 +313,8 @@ iframe:hover {
     }
 
     .responsive-img {
-        width: 50%;
+        width: 60%;
         height: auto;
-        text-align: center;
     }
 
     .column {
