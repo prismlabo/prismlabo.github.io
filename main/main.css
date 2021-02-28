@@ -28,18 +28,16 @@ body {
 
 .sidenav {
     height: 100%;
-    width: 50%;
+    width: 20%;
     position: fixed;
     z-index: 0;
     top: 0;
     left: 0;
     overflow-x: hidden;
-    padding-top: 5%;
+    padding: 0em 1em 0em;
     background-color: #64ff01;
     /* background-color: #64ff01; */
     color: #888;
-    padding: 5em 0em 0em;
-
 }
 
 .sidenav a {
@@ -57,7 +55,7 @@ body {
 .main {
     background: #000;
     color: #888;
-    margin-left: 50%;
+    margin-left: 25%;
     /* Same as the width of the sidenav */
     border: 0px solid transparent;
     box-sizing: border-box;
@@ -65,8 +63,9 @@ body {
 }
 
 address {
-    margin-left: 50%;
+    margin-left: 25%;
     color: #888;
+    padding: 0em 1em 0em;
 }
 
 @media screen and (max-height: 450px) {
@@ -80,7 +79,7 @@ address {
 /* Style the tab */
 .tab {
     overflow: hidden;
-    padding: 0em 1em 0em;
+
 }
 
 /* Style the buttons inside the tab */
@@ -156,8 +155,8 @@ hr {
 
 p {
     font-size: 1.5em;
-    line-height: 1 em;
-    padding: 0em 1em 0em;
+    line-height: 1.5;
+    padding: 0em 0em 0em;
     font-weight: 200;
 }
 
@@ -264,7 +263,7 @@ iframe:hover {
     border: 0px solid transparent;
     box-sizing: border-box;
     line-height: 1.5em;
-    padding: 0em 0em 0em;
+    padding: 0em 1em 0em;
 
 }
 
