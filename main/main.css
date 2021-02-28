@@ -243,13 +243,9 @@ img:hover {
     clear: both;
 }
 
-iframe {
-    filter: grayscale(100%);
-}
+iframe {}
 
-iframe:hover {
-    filter: grayscale(0%);
-}
+iframe:hover {}
 
 .footer {
     position: fixed;
@@ -348,4 +344,3 @@ iframe:hover {
         filter: grayscale(0%);
     }
 }
- 
