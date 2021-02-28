@@ -12,26 +12,18 @@
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300&display=swap');
 </style>
 
 <body>
 
-    <!--Top Nav & Counting D-day-->
+    <!--Top Nav -->
     <div class="top-nav">
 
-        <div class="column">
-            <p id="demo">
-                &lt;!--Counting D-day--&gt;
-            </p>
-        </div>
-        <div class="column">
-            <p style="text-align:right;"><a href=" https://prismlabo.github.io/main/index.html">&lt;!-- PRISMLABO --&gt;</a></p>
-        </div>
-
-        <hr>
-        <p style="text-align: center;">
-            <img src="data/logo.png" alt="LOGO" class="responsive-img">
-        </p>
+        <h2 id="demo">
+            &lt;!-- PRISMLABO--&gt;
+        </h2>
 
         <script>
             // Set the date we're counting down to
@@ -64,682 +56,139 @@
         </script>
     </div>
 
+    <!-- sidenav -->
+    <div class="sidenav">
+        <a href="https://prismlabo.github.io/main/index.html" style="text-align: center;">
+            <img src="data/logo.png" alt="LOGO" class="responsive-img">
+        </a>
 
-    <div class="tab">
-        <button class="tablinks" onclick="openProj(event, 'ABOUT')">
-            <h2>&lt;! ABOUT &gt;</h2>
-        </button>
-        <button class="tablinks" onclick="openProj(event, '#')">
-            <h2>Ｘ</h2>
-        </button>
+        <div class="tab">
+
+            <h2 class="tablinks" onclick="openProj(event, 'ABOUT')">
+                &lt;!-- ABOUT --&gt;
+            </h2>
+
+            <h2 class="tablinks" onclick="openProj(event, 'K-MV PROJECT')">
+                &lt;!-- K-MV PROJECT
+                --&gt;
+            </h2>
+            <h2 class="tablinks" onclick="openProj(event, 'MAD PROJECT')">
+                &lt;!-- MAD PROJECT
+                --&gt;
+            </h2>
+            <h2 class="tablinks" onclick="openProj(event, 'ADDRESS')">
+                &lt;!-- ADDRESS --&gt;
+            </h2>
+
+        </div>
     </div>
 
-    <div id="ABOUT" class="tabcontent">
-        <h2>PRISMLABO</h2>
-        <div class="column2">
+    <div class="main">
+
+        <div id="ABOUT" class="tabcontent">
+            <p>&lt;!-- ABOUT --&gt;</p>
             <p>PRISMLABO는 빛과 소리를 통해 다양한 실험을 하는 영상 실험실입니다. <br>
                 영상매체를 통해 기존의 고정된 틀에서 벗어난 새로운 시각을 제시하고, 다양한 실험을 통해 재미있는 영상 프로젝트를 기획합니다. <br>
                 팀원 각각의 스타일과 해석을 바탕으로 다채로운 영상을 제작하고자 합니다.</p>
-        </div>
-        <div class="column2">
+            <br>
             <p>PRISMLABO is a video laboratory that conducts various experiments through light and sound. <br>
                 Through video media, we propose new perspectives away from the existing fixed frame,
                 and we plan interesting video projects through various experiments. <br>
                 Based on the style and interpretation of each team member, we are going to produce a variety of videos. </p>
         </div>
-    </div>
 
-    <div class="tab">
-        <button class="tablinks" onclick="openProj(event, 'KMV-PRJ')">
-            <h2>&lt;! K-MV PROJECT &gt;</h2>
-        </button>
+        <div id="K-MV PROJECT" class="tabcontent">
+            <p>&lt;!-- K-MV PROJECT
+                --&gt;</p>
 
-        <button class="tablinks" onclick="openProj(event, '#')">
-            <h2>Ｘ</h2>
-        </button>
+            <p>PRISMLABO의 팀원 3명씩 3개의 팀을 만들고 각 팀별로 케이팝 뮤직비디오를 제작하는 프로젝트입니다.
+            </p>
 
-        <div id="KMV-PRJ" class="tabcontent">
             <div class="tab">
-                <h2>K-MV PROJECT</h2>
-                <p>PRISMLABO의 팀원 3명씩 3개의 팀을 만들고 각 팀별로 케이팝 뮤직비디오를 제작하는 프로젝트입니다. </p>
-                <button class="tablinks" onclick="openProj(event, 'BLACK')">
-                    <h2>#BLACK</h2>
-                </button>
-                <button class="tablinks" onclick="openProj(event, 'CLOUD')">
-                    <h2>#CLOUD</h2>
-                </button>
-                <button class="tablinks" onclick="openProj(event, 'SARYEONI')">
-                    <h2>#SARYEONI</h2>
-                </button>
-                <button class="tablinks" onclick="openProj(event, '#')">
-                    <h2>Ｘ</h2>
-                </button>
+                <p class="tablinks" onclick="openProj(event, 'BLACK')" style="text-align: center;">
+                    #BLACK
+                </p>
+                <p class="tablinks" onclick="openProj(event, 'CLOUD')" style="text-align: center;">
+                    #CLOUD
+                </p>
+                <p class="tablinks" onclick="openProj(event, 'SARYEONI')" style="text-align: center;">
+                    #SARYEONI
+                </p>
             </div>
         </div>
-    </div>
 
-    <div id="BLACK" class="tabcontent">
-        <div class="tab">
-            <h2>K-MV PROJECT</h2>
-            <p>PRISMLABO의 팀원 3명씩 3개의 팀을 만들고 각 팀별로 케이팝 뮤직비디오를 제작하는 프로젝트. </p>
+        <div id="MAD PROJECT" class="tabcontent">
+            <p>&lt;!-- MAD PROJECT --&gt;</p>
 
-            <button class="tablinks" onclick="openProj(event, 'BLACK')">
-                <h2>#BLACK</h2>
-            </button>
-            <button class="tablinks" onclick="openProj(event, 'CLOUD')">
-                <h2>#CLOUD</h2>
-            </button>
-            <button class="tablinks" onclick="openProj(event, 'SARYEONI')">
-                <h2>#SARYEONI</h2>
-            </button>
-            <button class="tablinks" onclick="openProj(event, 'KMV-PRJ')">
-                <h2>Ｘ</h2>
-            </button>
-        </div>
-        <h2>BLACK</h2>
-        <p>강유진 우예인 이채원</p>
-        <iframe width="1280" height="720" src="https://www.youtube.com/embed/AR9Ritexsi0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+            <p>PRISMLABO 구성원 개개인의 개성이 담긴 실험실입니다.
+                스티커를 클릭하면 작가 개인 페이지로 이동합니다.
+            </p>
 
-    <div id="CLOUD" class="tabcontent">
-        <div class="tab">
-            <h2>K-MV PROJECT</h2>
-            <p>PRISMLABO의 팀원 3명씩 3개의 팀을 만들고 각 팀별로 케이팝 뮤직비디오를 제작하는 프로젝트. </p>
+            <p style="text-align: center;">
+                <img src="data/cw.png" alt="CHAEWON-LEE" style="width:25%; height:auto;">
 
-            <button class="tablinks" onclick="openProj(event, 'BLACK')">
-                <h2>#BLACK</h2>
-            </button>
-            <button class="tablinks" onclick="openProj(event, 'CLOUD')">
-                <h2>#CLOUD</h2>
-            </button>
-            <button class="tablinks" onclick="openProj(event, 'SARYEONI')">
-                <h2>#SARYEONI</h2>
-            </button>
-            <button class="tablinks" onclick="openProj(event, 'KMV-PRJ')">
-                <h2>Ｘ</h2>
-            </button>
-        </div>
-        <h2>CLOUD</h2>
-        <p>김도연 류현서 한진희</p>
-        <iframe width="1280" height="720" src="https://www.youtube.com/embed/O-GE0a7hFXw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+                <img src="data/dy.png" style="width:25%; height:auto;">
 
-    <div id="SARYEONI" class="tabcontent">
-        <div class="tab">
-            <h2>K-MV PROJECT</h2>
-            <p>PRISMLABO의 팀원 3명씩 3개의 팀을 만들고 각 팀별로 케이팝 뮤직비디오를 제작하는 프로젝트. </p>
+                <img src="data/gm.png" style="width:25%; height:auto;">
 
-            <button class="tablinks" onclick="openProj(event, 'BLACK')">
-                <h2>#BLACK</h2>
-            </button>
-            <button class="tablinks" onclick="openProj(event, 'CLOUD')">
-                <h2>#CLOUD</h2>
-            </button>
-            <button class="tablinks" onclick="openProj(event, 'SARYEONI')">
-                <h2>#SARYEONI</h2>
-            </button>
-            <button class="tablinks" onclick="openProj(event, 'KMV-PRJ')">
-                <h2>Ｘ</h2>
-            </button>
-        </div>
-        <h2>SARYEONI</h2>
-        <p>박지수 안규미 조수민</p>
-        <iframe width="1280" height="720" src="https://www.youtube.com/embed/wP53cvpmiko" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+                <br>
 
-    <div class="tab">
-        <button class="tablinks" onclick="openProj(event, 'MAD-PROJ')">
-            <h2>&lt;! MAD PROJECT &gt;</h2>
-        </button>
+                <img src="data/hs.jpg" style="width:25%; height:auto;">
 
-        <button class="tablinks" onclick="openProj(event, '#')">
-            <h2>Ｘ</h2>
-        </button>
-    </div>
+                <img src="data/jh.jpg" style="width:25%; height:auto;">
 
-    <div id="MAD-PROJ" class="tabcontent">
-        <h2>MAD PROJECT</h2>
-        <p style="text-align: left;">PRISMLABO 구성원 개개인의 개성이 담긴 실험실입니다. <br>
-            스티커를 클릭하면 작가 개인 페이지로 이동합니다. </p><br>
+                <img src="data/js.jpg" style="width:25%; height:auto;">
 
-        <div class="tab">
-            <button class="tablinks" Alt onclick="openProj(event, 'YUJIN-KANG')">
-                <h2>#YUJIN-KANG</h2>
-            </button>
+                <br>
 
-            <button class="tablinks" onclick="openProj(event, 'YEIN-WOO')">
-                <h2>#YEIN-WOO</h2>
-            </button>
+                <img src="data/sm.png" style="width:25%; height:auto;">
 
-            <button class="tablinks" onclick="openProj(event, 'CHAEWON-LEE')">
-                <h2>#CHAEWON-LEE</h2>
-            </button>
+                <img src="data/yi.jpg" style="width:25%; height:auto;">
 
-            <button class="tablinks" onclick="openProj(event, 'DOYEON-KIM')">
-                <h2>#DOYEON-KIM</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'HYUNSEO-RYU')">
-                <h2>#HYUNSEO-RYU</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'JINHEE-HAN')">
-                <h2>#JINHEE-HAN</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'JISOO-PARK')">
-                <h2>#JISOO-PARK</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'GYUMI-AN')">
-                <h2>#GYUMI-AN</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'SUMIN-CHO')">
-                <h2>#SUMIN-CHO</h2>
-            </button>
-            <button class="tablinks" onclick="openProj(event, '#')">
-                <h2>Ｘ</h2>
-            </button>
+                <img src="data/yj.png" style="width:25%; height:auto;">
+            </p>
         </div>
 
-        <p style="text-align: center;">
-            <img src="data/cw.png" alt="CHAEWON-LEE" style="width:25%; height:auto;">
+        <div id="BLACK" class="tabcontent">
+            <h2>BLACK</h2>
+            <p>강유진 우예인 이채원</p>
+            <!--썸네일-->
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/AR9Ritexsi0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-            <img src="data/dy.png" style="width:25%; height:auto;">
+        <div id="CLOUD" class="tabcontent">
+            <h2>CLOUD</h2>
+            <p>김도연 류현서 한진희</p>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/O-GE0a7hFXw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-            <img src="data/gm.png" style="width:25%; height:auto;">
+        <div id="SARYEONI" class="tabcontent">
+            <h2>SARYEONI</h2>
+            <p>박지수 안규미 조수민</p>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/wP53cvpmiko" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-            <br>
+    </div>
 
-            <img src="data/hs.jpg" style="width:25%; height:auto;">
+    <div id="ADDRESS" class="tabcontent">
+        <address>
+            <p>
+                College of Art & Design, Ewha Womans University<br>
+                52, Ewhayeodae-gil, Seodaemun-gu, Seoul, Republic of Korea<br>
+                ewhgyu@ewhain.net<br>
+                ⓒGYUMI-ANK. All rights reserved.
+            </p>
+        </address>
+    </div>
 
-            <img src="data/jh.jpg" style="width:25%; height:auto;">
 
-            <img src="data/js.jpg" style="width:25%; height:auto;">
-
-            <br>
-
-            <img src="data/sm.png" style="width:25%; height:auto;">
-
-            <img src="data/yi.jpg" style="width:25%; height:auto;">
-
-            <img src="data/yj.png" style="width:25%; height:auto;">
+    <div class="footer">
+        <p>
+            ⓒPRISMLABO. All rights reserved.
         </p>
-
     </div>
 
-    <div id="YUJIN-KANG" class="tabcontent">
-        <h2>MAD PROJECT</h2>
-        <p style="text-align: left;">PRISMLABO 구성원 개개인의 개성이 담긴 실험실입니다. <br>
-            스티커를 클릭하면 작가 개인 페이지로 이동합니다. </p><br>
-
-        <div class="tab">
-            <button class="tablinks" Alt onclick="openProj(event, 'YUJIN-KANG')">
-                <h2>#YUJIN-KANG</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'YEIN-WOO')">
-                <h2>#YEIN-WOO</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'CHAEWON-LEE')">
-                <h2>#CHAEWON-LEE</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'DOYEON-KIM')">
-                <h2>#DOYEON-KIM</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'HYUNSEO-RYU')">
-                <h2>#HYUNSEO-RYU</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'JINHEE-HAN')">
-                <h2>#JINHEE-HAN</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'JISOO-PARK')">
-                <h2>#JISOO-PARK</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'GYUMI-AN')">
-                <h2>#GYUMI-AN</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'SUMIN-CHO')">
-                <h2>#SUMIN-CHO</h2>
-            </button>
-            <button class="tablinks" onclick="openProj(event, 'MAD-PROJ')">
-                <h2>Ｘ</h2>
-            </button>
-        </div>
-
-        <h2>YUJIN-KANG</h2>
-        <p>강유진</p>
-        <img src="data/yj.png" alt="YUJIN-KANG" style="width:25%; height:auto;">
-    </div>
-
-    <div id="YEIN-WOO" class="tabcontent">
-        <h2>MAD PROJECT</h2>
-        <p style="text-align: left;">PRISMLABO 구성원 개개인의 개성이 담긴 실험실입니다. <br>
-            스티커를 클릭하면 작가 개인 페이지로 이동합니다. </p><br>
-
-        <div class="tab">
-            <button class="tablinks" Alt onclick="openProj(event, 'YUJIN-KANG')">
-                <h2>#YUJIN-KANG</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'YEIN-WOO')">
-                <h2>#YEIN-WOO</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'CHAEWON-LEE')">
-                <h2>#CHAEWON-LEE</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'DOYEON-KIM')">
-                <h2>#DOYEON-KIM</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'HYUNSEO-RYU')">
-                <h2>#HYUNSEO-RYU</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'JINHEE-HAN')">
-                <h2>#JINHEE-HAN</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'JISOO-PARK')">
-                <h2>#JISOO-PARK</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'GYUMI-AN')">
-                <h2>#GYUMI-AN</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'SUMIN-CHO')">
-                <h2>#SUMIN-CHO</h2>
-            </button>
-            <button class="tablinks" onclick="openProj(event, 'MAD-PROJ')">
-                <h2>Ｘ</h2>
-            </button>
-        </div>
-
-        <h2>YEIN-WOO</h2>
-        <p>우예인</p>
-        <img src="data/yi.jpg" alt="YEIN-WOO" style="width:25%; height:auto;">
-    </div>
-
-    <div id="CHAEWON-LEE" class="tabcontent">
-        <h2>MAD PROJECT</h2>
-        <p style="text-align: left;">PRISMLABO 구성원 개개인의 개성이 담긴 실험실입니다. <br>
-            스티커를 클릭하면 작가 개인 페이지로 이동합니다. </p><br>
-
-        <div class="tab">
-            <button class="tablinks" Alt onclick="openProj(event, 'YUJIN-KANG')">
-                <h2>#YUJIN-KANG</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'YEIN-WOO')">
-                <h2>#YEIN-WOO</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'CHAEWON-LEE')">
-                <h2>#CHAEWON-LEE</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'DOYEON-KIM')">
-                <h2>#DOYEON-KIM</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'HYUNSEO-RYU')">
-                <h2>#HYUNSEO-RYU</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'JINHEE-HAN')">
-                <h2>#JINHEE-HAN</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'JISOO-PARK')">
-                <h2>#JISOO-PARK</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'GYUMI-AN')">
-                <h2>#GYUMI-AN</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'SUMIN-CHO')">
-                <h2>#SUMIN-CHO</h2>
-            </button>
-            <button class="tablinks" onclick="openProj(event, 'MAD-PROJ')">
-                <h2>Ｘ</h2>
-            </button>
-        </div>
-
-        <h2>CHAEWON-LEE</h2>
-        <p>이채원</p>
-        <img src="data/cw.png" alt="CHAEWON-LEE" style="width:25%; height:auto;">
-    </div>
-
-    <div id="DOYEON-KIM" class="tabcontent">
-        <h2>MAD PROJECT</h2>
-        <p style="text-align: left;">PRISMLABO 구성원 개개인의 개성이 담긴 실험실입니다. <br>
-            스티커를 클릭하면 작가 개인 페이지로 이동합니다. </p><br>
-
-        <div class="tab">
-            <button class="tablinks" Alt onclick="openProj(event, 'YUJIN-KANG')">
-                <h2>#YUJIN-KANG</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'YEIN-WOO')">
-                <h2>#YEIN-WOO</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'CHAEWON-LEE')">
-                <h2>#CHAEWON-LEE</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'DOYEON-KIM')">
-                <h2>#DOYEON-KIM</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'HYUNSEO-RYU')">
-                <h2>#HYUNSEO-RYU</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'JINHEE-HAN')">
-                <h2>#JINHEE-HAN</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'JISOO-PARK')">
-                <h2>#JISOO-PARK</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'GYUMI-AN')">
-                <h2>#GYUMI-AN</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'SUMIN-CHO')">
-                <h2>#SUMIN-CHO</h2>
-            </button>
-            <button class="tablinks" onclick="openProj(event, 'MAD-PROJ')">
-                <h2>Ｘ</h2>
-            </button>
-        </div>
-
-        <h2>DOYEON-KIM</h2>
-        <p>김도연</p>
-        <img src="data/dy.png" alt="DOYEON-KIM" style="width:25%; height:auto;">
-    </div>
-
-    <div id="HYUNSEO-RYU" class="tabcontent">
-        <h2>MAD PROJECT</h2>
-        <p style="text-align: left;">PRISMLABO 구성원 개개인의 개성이 담긴 실험실입니다. <br>
-            스티커를 클릭하면 작가 개인 페이지로 이동합니다. </p><br>
-
-        <div class="tab">
-            <button class="tablinks" Alt onclick="openProj(event, 'YUJIN-KANG')">
-                <h2>#YUJIN-KANG</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'YEIN-WOO')">
-                <h2>#YEIN-WOO</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'CHAEWON-LEE')">
-                <h2>#CHAEWON-LEE</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'DOYEON-KIM')">
-                <h2>#DOYEON-KIM</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'HYUNSEO-RYU')">
-                <h2>#HYUNSEO-RYU</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'JINHEE-HAN')">
-                <h2>#JINHEE-HAN</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'JISOO-PARK')">
-                <h2>#JISOO-PARK</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'GYUMI-AN')">
-                <h2>#GYUMI-AN</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'SUMIN-CHO')">
-                <h2>#SUMIN-CHO</h2>
-            </button>
-            <button class="tablinks" onclick="openProj(event, 'MAD-PROJ')">
-                <h2>Ｘ</h2>
-            </button>
-        </div>
-
-        <h2>HYUNSEO-RYU</h2>
-        <p>류현서</p>
-        <img src="data/hs.jpg" alt="HYUNSEO-RYU" style="width:25%; height:auto;">
-    </div>
-
-    <div id="JINHEE-HAN" class="tabcontent">
-        <h2>MAD PROJECT</h2>
-        <p style="text-align: left;">PRISMLABO 구성원 개개인의 개성이 담긴 실험실입니다. <br>
-            스티커를 클릭하면 작가 개인 페이지로 이동합니다. </p><br>
-
-        <div class="tab">
-            <button class="tablinks" Alt onclick="openProj(event, 'YUJIN-KANG')">
-                <h2>#YUJIN-KANG</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'YEIN-WOO')">
-                <h2>#YEIN-WOO</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'CHAEWON-LEE')">
-                <h2>#CHAEWON-LEE</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'DOYEON-KIM')">
-                <h2>#DOYEON-KIM</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'HYUNSEO-RYU')">
-                <h2>#HYUNSEO-RYU</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'JINHEE-HAN')">
-                <h2>#JINHEE-HAN</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'JISOO-PARK')">
-                <h2>#JISOO-PARK</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'GYUMI-AN')">
-                <h2>#GYUMI-AN</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'SUMIN-CHO')">
-                <h2>#SUMIN-CHO</h2>
-            </button>
-            <button class="tablinks" onclick="openProj(event, 'MAD-PROJ')">
-                <h2>Ｘ</h2>
-            </button>
-        </div>
-
-        <h2>JINHEE-HAN</h2>
-        <p>한진희</p>
-        <img src="data/jh.jpg" alt="JINHEE-HAN" style="width:25%; height:auto;">
-    </div>
-
-    <div id="JISOO-PARK" class="tabcontent">
-        <h2>MAD PROJECT</h2>
-        <p style="text-align: left;">PRISMLABO 구성원 개개인의 개성이 담긴 실험실입니다. <br>
-            스티커를 클릭하면 작가 개인 페이지로 이동합니다. </p><br>
-
-        <div class="tab">
-            <button class="tablinks" Alt onclick="openProj(event, 'YUJIN-KANG')">
-                <h2>#YUJIN-KANG</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'YEIN-WOO')">
-                <h2>#YEIN-WOO</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'CHAEWON-LEE')">
-                <h2>#CHAEWON-LEE</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'DOYEON-KIM')">
-                <h2>#DOYEON-KIM</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'HYUNSEO-RYU')">
-                <h2>#HYUNSEO-RYU</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'JINHEE-HAN')">
-                <h2>#JINHEE-HAN</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'JISOO-PARK')">
-                <h2>#JISOO-PARK</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'GYUMI-AN')">
-                <h2>#GYUMI-AN</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'SUMIN-CHO')">
-                <h2>#SUMIN-CHO</h2>
-            </button>
-            <button class="tablinks" onclick="openProj(event, 'MAD-PROJ')">
-                <h2>Ｘ</h2>
-            </button>
-        </div>
-
-        <h2>JISOO-PARK</h2>
-        <p>박지수</p>
-        <img src="data/js.jpg" alt="JISOO-PARK" style="width:25%; height:auto;">
-    </div>
-
-    <div id="GYUMI-AN" class="tabcontent">
-        <h2>MAD PROJECT</h2>
-        <p style="text-align: left;">PRISMLABO 구성원 개개인의 개성이 담긴 실험실입니다. <br>
-            스티커를 클릭하면 작가 개인 페이지로 이동합니다. </p><br>
-
-        <div class="tab">
-            <button class="tablinks" Alt onclick="openProj(event, 'YUJIN-KANG')">
-                <h2>#YUJIN-KANG</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'YEIN-WOO')">
-                <h2>#YEIN-WOO</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'CHAEWON-LEE')">
-                <h2>#CHAEWON-LEE</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'DOYEON-KIM')">
-                <h2>#DOYEON-KIM</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'HYUNSEO-RYU')">
-                <h2>#HYUNSEO-RYU</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'JINHEE-HAN')">
-                <h2>#JINHEE-HAN</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'JISOO-PARK')">
-                <h2>#JISOO-PARK</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'GYUMI-AN')">
-                <h2>#GYUMI-AN</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'SUMIN-CHO')">
-                <h2>#SUMIN-CHO</h2>
-            </button>
-            <button class="tablinks" onclick="openProj(event, 'MAD-PROJ')">
-                <h2>Ｘ</h2>
-            </button>
-        </div>
-
-        <h2>GYUMI-AN</h2>
-        <p>안규미</p>
-        <img src="data/gm.png" alt="GYUMI-AN" style="width:25%; height:auto;">
-    </div>
-
-    <div id="SUMIN-CHO" class="tabcontent">
-        <h2>MAD PROJECT</h2>
-        <p style="text-align: left;">PRISMLABO 구성원 개개인의 개성이 담긴 실험실입니다. <br>
-            스티커를 클릭하면 작가 개인 페이지로 이동합니다. </p><br>
-
-        <div class="tab">
-            <button class="tablinks" Alt onclick="openProj(event, 'YUJIN-KANG')">
-                <h2>#YUJIN-KANG</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'YEIN-WOO')">
-                <h2>#YEIN-WOO</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'CHAEWON-LEE')">
-                <h2>#CHAEWON-LEE</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'DOYEON-KIM')">
-                <h2>#DOYEON-KIM</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'HYUNSEO-RYU')">
-                <h2>#HYUNSEO-RYU</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'JINHEE-HAN')">
-                <h2>#JINHEE-HAN</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'JISOO-PARK')">
-                <h2>#JISOO-PARK</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'GYUMI-AN')">
-                <h2>#GYUMI-AN</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'SUMIN-CHO')">
-                <h2>#SUMIN-CHO</h2>
-            </button>
-
-            <button class="tablinks" onclick="openProj(event, 'MAD-PROJ')">
-                <h2>Ｘ</h2>
-            </button>
-        </div>
-
-        <h2>SUMIN-CHO</h2>
-        <p>조수민</p>
-        <img src="data/sm.png" alt="SUMIN-CHO" style="width:25%; height:auto;">
-    </div>
-
-    <!--
-    <div class="row">
-        <div class="column">
-            <h3><a href="https://www.instagram.com/prism_labo/">Instagram</a></h3>
-        </div>
-        <div class="column">
-            <h3><a href="https://www.youtube.com/channel/UCdvYGNTp_yMEdVPUA4UTHrw">Youtube</a></h3>
-        </div>
-
-    </div>
-    -->
+    <!-- openProj Tab-->
     <script>
         function openProj(evt, pojName) {
             var i, tabcontent, tablinks;
@@ -755,43 +204,6 @@
             evt.currentTarget.className += " active";
         }
     </script>
-
-
-    <div class="tab">
-        <button class="tablinks" onclick="openProj(event, 'CONTACT')">
-            <h2>&lt;! CONTACT &gt;</h2>
-        </button>
-        <button class="tablinks" onclick="openProj(event, '#')">
-            <h2>Ｘ</h2>
-        </button>
-    </div>
-
-    <div id="CONTACT" class="tabcontent">
-        <p>
-            INSTAGRAM<br>
-            YOUTUBE<br>
-            GITHUB<br>
-            GMAIL<br>
-        </p>
-    </div>
-
-    <div class="tab">
-        <button class="tablinks" onclick="openProj(event, 'C')">
-            <h2>&lt;! ⓒ &gt;</h2>
-        </button>
-        <button class="tablinks" onclick="openProj(event, '#')">
-            <h2>Ｘ</h2>
-        </button>
-    </div>
-
-    <div id="C" class="tabcontent">
-        <p>
-            College of Art & Design, Ewha Womans University<br>
-            52, Ewhayeodae-gil, Seodaemun-gu, Seoul, Republic of Korea<br>
-            2020prismlabo@gmail.com<br>
-            ⓒPrismLabo. All rights reserved.
-        </p>
-    </div>
 
 </body></html>
 <!--
