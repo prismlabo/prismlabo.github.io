@@ -37,7 +37,7 @@ body {
     padding: 0em 1em 0em;
     background-color: #64ff01;
     /* background-color: #64ff01; */
-    color: #888;
+    color: #666;
 }
 
 .sidenav a {
@@ -139,7 +139,10 @@ h2,
 h3,
 h4,
 h5,
-h6 {}
+h6 {
+    padding: 0em 0em 0em;
+    line-height: 1;
+}
 
 
 a {}
@@ -282,12 +285,51 @@ iframe:hover {}
 
     body {
         box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-
-        font-size: 1.0em;
+        font-size: 1.5em;
         line-height: 1.0em;
         margin: 0 auto;
         padding: 0em 0em 0em;
     }
+
+    .sidenav {
+        width: 100%;
+        position: fixed;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding: 0em 1em 0em;
+        background-color: #64ff01;
+        /* background-color: #64ff01; */
+        color: #666;
+    }
+
+    .main {
+        width: 100%;
+        background: #000;
+        color: #888;
+        margin-left: 0%;
+        /* Same as the width of the sidenav */
+        border: 0px solid transparent;
+        box-sizing: border-box;
+        padding: 0em 1em 0em;
+    }
+
+    /* Style the tab */
+    .tab {
+        overflow: hidden;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+
+        display: none;
+        border: 1px solid transparent;
+        border-top: none;
+        background-color: transparent;
+
+    }
+
 
     h1 {
         font-size: 3.5em;
@@ -302,25 +344,10 @@ iframe:hover {}
         line-height: 1.5em;
     }
 
-    /* Style the buttons inside the tab */
-    .tab button {
-        outline: none;
-        cursor: pointer;
-        padding: 1em 1em 1em;
-        transition: 0.3s;
-        text-align: center;
-    }
-
-    /* Style the tab content */
-    .tabcontent {
-        display: none;
-        border: 1px solid #000;
-        border-top: none;
-    }
 
     img {
         transition: width 3s, height 3s, transform 3s;
-        z-index: -1;
+        z-index: 0;
         cursor: pointer;
         border: 1em solid rgba(0, 0, 0, 0);
     }
