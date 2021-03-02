@@ -6,7 +6,8 @@ body {
     font-family: 'Noto Serif KR', serif;
     font-size: 1.2em;
     line-height: 24px;
-    padding: 0em 1em 0em;
+
+
 }
 
 
@@ -31,18 +32,11 @@ h6 {
 
 }
 
-strong {
-    padding: 0em 0em 0em;
-}
+strong {}
 
-mark {
-    background-color: #ff0;
+mark {}
 
-}
-
-b {
-    font-weight: 100;
-}
+b {}
 
 textarea {
     overflow: auto
@@ -52,19 +46,8 @@ samp {
     display: none;
 }
 
-hr {
-    border: 1px solid transparent;
-
-    margin: auto;
-}
-
 p,
-strong {
-
-
-    margin: auto;
-
-}
+strong {}
 
 a {
     background-color: transparent;
@@ -79,9 +62,7 @@ a:hover {
     text-decoration: underline;
 }
 
-a:active {
-    color: #8a00ff;
-}
+a:active {}
 
 
 button {
@@ -126,12 +107,6 @@ canvas {
 }
 
 
-a,
-button,
-input,
-select {
-    pointer-events: auto;
-}
 
 .dg.ac {
     -moz-user-select: none;
@@ -156,7 +131,7 @@ select {
 }
 
 #overlay button {
-    background: #ffffff;
+    background: transparent;
     border: 0;
 
     padding: 16px 20px;
