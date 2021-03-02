@@ -1,379 +1,228 @@
-html {
-    background: #000;
-}
-
-body {
-    /*font-family: 'Nanum Gothic Coding', monospace;*/
-    font-family: 'Noto Serif KR', serif;
-    line-height: 1.5;
-    margin: 0 auto;
-    padding: 0em 0em 0em;
-
-
-}
-
-.top-nav {
-    position: fixed;
-    overflow: hidden;
-    color: #888;
-    /* background: linear-gradient(#64ff01, transparent, transparent);*/
-    padding: 0em 1em 0em;
-    top: 0;
-    width: 50%;
-    z-index: 2;
-    border: 0px solid transparent;
-    box-sizing: border-box;
-
-}
-
-.sidenav {
-    height: 100%;
-    width: 20%;
-    position: fixed;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    padding: 0em 1em 0em;
-    background-color: #64ff01;
-    background: linear-gradient(to bottom, #64ff01, blue, transparent, transparent);
-    /* background-color: #64ff01; */
-    color: #666;
-    text-align: center;
-}
-
-.sidenav a {
-
-    text-decoration: none;
-
-    color: #818181;
-    display: block;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.main {
-    background: #000;
-    color: #888;
-    margin-left: 25%;
-    /* Same as the width of the sidenav */
-    border: 0px solid transparent;
-    box-sizing: border-box;
-    padding: 0em 1em 0em;
-}
-
-address {
-    margin-left: 25%;
-    color: #888;
-    padding: 0em 1em 0em;
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 5%;
-    }
-
-    .sidenav a {}
-}
-
-/* Style the tab */
-.tab {
-    overflow: hidden;
-
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-    background-color: transparent;
-    border: 1px solid transparent;
-    outline: none;
-    cursor: pointer;
-
-    transition: 0.3s;
-
-    text-align: center;
-    border-radius: 40px;
-
-    padding: 0em 0em 0em;
-
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-    border: 1px solid #fff;
-    /* background-image: linear-gradient(#6401ff, #64ff01, #0101ff, #6401ff); */
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-    border: 1px solid #fff;
-}
-
-/* Style the tab content */
-.tabcontent {
-
-    display: none;
-
-    border: 1px solid #000;
-    border-top: none;
-    background-color: transparent;
-
-}
-
-
-h1 {
-    font-size: 3.0em;
-    text-align: center;
-    padding: 0em 0em 0em;
-    line-height: 1;
-}
-
-h2 {
-    font-size: 2em;
-    padding: 0em 0em 0em;
-    line-height: 1;
-}
-
-h3 {
-    font-size: 1.5em;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    padding: 0em 0em 0em;
-    line-height: 1;
-}
-
-
-a {}
-
-samp {
-    display: none;
-}
-
-hr {
-    border: 1px solid #000;
-    padding: 0em 0em 0em;
-}
-
-p {
-    font-size: 1.5em;
-    line-height: 1.5;
-    padding: 0em 0em 0em;
-    font-weight: 200;
-}
-
-button {}
-
-a:link {
-
-    text-decoration: none;
-}
-
-a:visited {
-    color: #00f;
-}
-
-a:hover {
-    color: #00f;
-}
-
-a:active {
-    color: #f0f;
-}
-
-.column {
-    text-align: left;
-    line-height: 1 em;
-    float: left;
-    width: 50%;
-}
-
-.accordion {
-    overflow: hidden;
-    color: #000;
-    background-color: #64ff01;
-    top: 0;
-    width: 100%;
-    z-index: +1;
-}
-
-.active,
-.accordion:hover {
-    background-color: transparent;
-}
-
-.panel {
-    color: #000;
-    display: none;
-    background-color: white;
-    overflow: hidden;
-}
-
-img {
-    transition: width 3s, height 3s, transform 3s;
-    z-index: -1;
-    cursor: pointer;
-    border: 1em solid rgba(0, 0, 0, 0);
-    opacity: 1;
-
-    /* Center an Image */
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.responsive-img {
-    width: 40%;
-    height: auto;
-    text-align: center;
-}
-
-img:active {
-    transform: rotateZ(90deg);
-    /* transform: rotate(180deg); */
-}
-
-img:hover {
-    transform: rotateZ(90deg);
-    filter: drop-shadow(1px 1px 10px #64ff01);
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-iframe {}
-
-iframe:hover {}
-
-.footer {
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: transparent;
-    color: #888;
-    text-align: left;
-    border: 0px solid transparent;
-    box-sizing: border-box;
-    line-height: 1.5em;
-    padding: 0em 1em 0em;
-
-}
-
-/* Image effect */
-@keyframes colorize {
-    0% {
-        -webkit-filter: opacity(0%);
-        filter: opacity(0%);
-    }
-
-    100% {
-        -webkit-filter: opacity(100%);
-        filter: opacity(100%);
-    }
-}
-
-/* At mobile display */
-@media screen and (max-width: 1242px) {
-    /* 1242px */
-
-    body {
-        box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-        font-size: 1.5em;
-        line-height: 1.0em;
-        margin: 0 auto;
-        padding: 0em 0em 0em;
-    }
-
-    .sidenav {
-        width: 100%;
-        position: fixed;
-        z-index: 0;
-        top: 0;
-        left: 0;
-        overflow-x: hidden;
-        padding: 0em 1em 0em;
-        background-color: #64ff01;
-        /* background-color: #64ff01; */
-        color: #666;
-    }
-
-    .main {
-        width: 100%;
-        background: #000;
-        color: #888;
-        margin-left: 0%;
-        /* Same as the width of the sidenav */
-        border: 0px solid transparent;
-        box-sizing: border-box;
-        padding: 0em 1em 0em;
-    }
-
-    /* Style the tab */
-    .tab {
-        overflow: hidden;
-    }
-
-    /* Style the tab content */
-    .tabcontent {
-
-        display: none;
-        border: 1px solid transparent;
-        border-top: none;
-        background-color: transparent;
-
-    }
-
-
-    h1 {
-        font-size: 3.5em;
-        text-align: center;
-    }
-
-    h2 {
-        font-size: 2em;
-    }
-
-    p {
-        line-height: 1.5em;
-    }
-
-
-    img {
-        transition: width 3s, height 3s, transform 3s;
-        z-index: 0;
-        cursor: pointer;
-        border: 1em solid rgba(0, 0, 0, 0);
-    }
-
-    .responsive-img {
-        width: 60%;
-        height: auto;
-    }
-
-    .column {}
-
-    .footer {}
-
-    iframe {
-        max-width: 560px;
-        max-height: auto;
-        filter: grayscale(100%);
-    }
-
-    iframe:hover {
-        filter: grayscale(0%);
-    }
-}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PRISMLABO</title>
+    <meta name="description" content="2020 PrismLabo">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="https://github.com/prismlabo/prismlabo.github.io/blob/main/main/data/logo.png?raw=true">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300&display=swap');
+</style>
+
+<body>
+
+    <!--Top Nav -->
+    <div class="top-nav">
+
+    </div>
+
+    <!-- sidenav -->
+    <div class="sidenav">
+
+        <h3 id="demo">
+            &lt;!-- PRISMLABO--&gt;
+        </h3>
+
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Feb 28, 2021 23:59:59").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+                // Get today's date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                // Output the result in an element with id="demo"
+                document.getElementById("demo").innerHTML = "&lt;!-- ONLINE SCREENING " + days + "D " + hours + "H " +
+                    minutes + "M " + seconds + "S LEFT --&gt";
+
+                // If the count down is over, write some text 
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "ONLINE SCREENING <br> 2021.3.1 - 3.7";
+                }
+            }, 1000);
+        </script>
+
+        <a href="https://prismlabo.github.io/main/index.html" style="text-align: center;">
+            <img src="https://github.com/prismlabo/prismlabo.github.io/blob/main/main/data/logo.png?raw=true" alt="LOGO" class="responsive-img">
+        </a>
+
+        <div class="tab">
+
+            <h3 class="tablinks" onclick="openProj(event, 'ABOUT')">
+                &lt;!-- ABOUT --&gt;
+            </h3>
+
+            <h3 class="tablinks" onclick="openProj(event, 'K-MV PROJECT')">
+                &lt;!-- K-MV PROJECT
+                --&gt;
+            </h3>
+            <h3 class="tablinks" onclick="openProj(event, 'MAD PROJECT')">
+                &lt;!-- MAD PROJECT
+                --&gt;
+            </h3>
+            <h3 class="tablinks" onclick="openProj(event, 'ADDRESS')">
+                &lt;!-- ADDRESS --&gt;
+            </h3>
+
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div id="ABOUT" class="tabcontent">
+            <h2 style="font-size: 3em; line-height: .5">&lt;!-- ABOUT --&gt;</h2>
+            <p>PRISMLABO는 빛과 소리를 통해 다양한 실험을 하는 영상 실험실입니다. <br>
+                영상매체를 통해 기존의 고정된 틀에서 벗어난 새로운 시각을 제시하고, 다양한 실험을 통해 재미있는 영상 프로젝트를 기획합니다. <br>
+                팀원 각각의 스타일과 해석을 바탕으로 다채로운 영상을 제작하고자 합니다.</p>
+            <br>
+            <p>PRISMLABO is a video laboratory that conducts various experiments through light and sound. <br>
+                Through video media, we propose new perspectives away from the existing fixed frame,
+                and we plan interesting video projects through various experiments. <br>
+                Based on the style and interpretation of each team member, we are going to produce a variety of videos. </p>
+        </div>
+
+        <div id="K-MV PROJECT" class="tabcontent">
+            <h2 style="font-size: 3em; line-height: .5">&lt;!-- K-MV PROJECT
+                --&gt;</h2>
+
+            <p>PRISMLABO의 팀원 3명씩 3개의 팀을 만들고 각 팀별로 케이팝 뮤직비디오를 제작하는 프로젝트입니다.
+            </p>
+
+            <div class="tab">
+                <p class="tablinks" onclick="openProj(event, 'BLACK')" style="text-align: center;">
+                    #BLACK
+                </p>
+                <p class="tablinks" onclick="openProj(event, 'CLOUD')" style="text-align: center;">
+                    #CLOUD
+                </p>
+                <p class="tablinks" onclick="openProj(event, 'SARYEONI')" style="text-align: center;">
+                    #SARYEONI
+                </p>
+            </div>
+        </div>
+
+        <div id="MAD PROJECT" class="tabcontent">
+            <h2 style="font-size: 3em; line-height: .5">&lt;!-- MAD PROJECT --&gt;</h2>
+
+            <p>PRISMLABO 구성원 개개인의 개성이 담긴 실험실입니다.
+                스티커를 클릭하면 작가 개인 페이지로 이동합니다.
+            </p>
+
+            <p style="text-align: center;">
+                <img src="data/cw.png" alt="CHAEWON-LEE" style="width:25%; height:auto;">
+
+                <img src="data/dy.png" style="width:25%; height:auto;">
+
+                <img src="data/gm.png" style="width:25%; height:auto;">
+
+                <br>
+
+                <img src="data/hs.jpg" style="width:25%; height:auto;">
+
+                <img src="data/jh.jpg" style="width:25%; height:auto;">
+
+                <img src="data/js.jpg" style="width:25%; height:auto;">
+
+                <br>
+
+                <img src="data/sm.png" style="width:25%; height:auto;">
+
+                <img src="data/yi.jpg" style="width:25%; height:auto;">
+
+                <img src="data/yj.png" style="width:25%; height:auto;">
+            </p>
+        </div>
+
+        <div id="BLACK" class="tabcontent">
+            <h2 class="tablinks" onclick="openProj(event, 'K-MV PROJECT')" style="font-size: 3em; line-height: .5">
+                &lt;!-- K-MV PROJECT
+                --&gt;
+            </h2>
+            <h2>BLACK</h2>
+            <p>강유진 우예인 이채원</p>
+            <!--썸네일(?)-->
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/AR9Ritexsi0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+
+        <div id="CLOUD" class="tabcontent">
+            <h2 class="tablinks" onclick="openProj(event, 'K-MV PROJECT')" style="font-size: 3em; line-height: .5">
+                &lt;!-- K-MV PROJECT
+                --&gt;
+            </h2>
+            <h2>CLOUD</h2>
+            <p>김도연 류현서 한진희</p>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/O-GE0a7hFXw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div id="SARYEONI" class="tabcontent">
+            <h2 class="tablinks" onclick="openProj(event, 'K-MV PROJECT')" style="font-size: 3em; line-height: .5">
+                &lt;!-- K-MV PROJECT
+                --&gt;
+            </h2>
+            <h2>SARYEONI</h2>
+            <p>박지수 안규미 조수민</p>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/wP53cvpmiko" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+    <div id="ADDRESS" class="tabcontent">
+        <address>
+            <h2 style="font-size: 3em; line-height: .5">&lt;!-- ADDRESS--&gt;</h2>
+            <p>
+                College of Art & Design, Ewha Womans University<br>
+                52, Ewhayeodae-gil, Seodaemun-gu, Seoul, Republic of Korea<br>
+                2020prismlabo@gmail.com<br>
+                ⓒPRISMLABO. All rights reserved.
+            </p>
+        </address>
+    </div>
+
+    <!-- openProj Tab-->
+    <script>
+        function openProj(evt, pojName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(pojName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+</body></html>
+<!--
+feedback: 
+이미지 호버
+디데이 텍스트 슬라이드
+메인 사이트 / 키비주얼 
+개별 사이트 디자인
+유튜브 프레임 디자인
+링크 이미지 
+PC / IOS / 안드로이드 웹 테스트 
+유튜브 / 인스타 / 깃허브 탭과 아이콘
+-->
