@@ -36,8 +36,10 @@ body {
     overflow-x: hidden;
     padding: 0em 1em 0em;
     background-color: #64ff01;
+    background: linear-gradient(to bottom, #64ff01, blue, transparent, transparent);
     /* background-color: #64ff01; */
     color: #666;
+    text-align: center;
 }
 
 .sidenav a {
@@ -122,7 +124,7 @@ address {
 
 
 h1 {
-    font-size: 3.5em;
+    font-size: 3.0em;
     text-align: center;
     padding: 0em 0em 0em;
     line-height: 1;
