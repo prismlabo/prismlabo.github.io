@@ -288,7 +288,9 @@ iframe:hover {}
         font-size: 1.5em;
         line-height: 1.0em;
         margin: 0 auto;
-        padding: 0em 1em 0em;
+        padding: 0em 1em 1em;
+        text-align: center;
+
     }
 
 
@@ -314,15 +316,18 @@ iframe:hover {}
 
 
     h1 {
-        font-size: 3.5em;
+        font-size: 4em;
+        text-align: center;
     }
 
     h2 {
-        font-size: 2em;
+        font-size: 2.5em;
+        text-align: center;
     }
 
     p {
-        line-height: 1.5em;
+        line-height: 2em;
+        text-align: center;
     }
 
 
@@ -341,7 +346,10 @@ iframe:hover {}
 
     .column {}
 
-    .footer {}
+    .footer {
+        text-align: center;
+    }
+
     iframe {
         max-width: 95%;
         max-height: auto;
