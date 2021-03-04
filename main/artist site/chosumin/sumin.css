@@ -186,7 +186,7 @@ p {
 button {}
 
 a:link {
-    color: #888;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -278,6 +278,7 @@ iframe:hover {}
         filter: opacity(100%);
     }
 }
+
 /* At mobile display */
 @media screen and (max-width: 1242px) {
     /* 1242px */
