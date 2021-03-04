@@ -346,10 +346,5 @@ iframe:hover {}
     iframe {
         max-width: 95%;
         max-height: auto;
-        filter: grayscale(100%);
-    }
-
-    iframe:hover {
-        filter: grayscale(0%);
     }
 }
