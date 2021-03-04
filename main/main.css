@@ -231,6 +231,7 @@ img {
     /* Center an Image */
     margin-left: auto;
     margin-right: auto;
+
 }
 
 .overlay {
@@ -421,7 +422,9 @@ iframe:hover {}
     }
 
 
-    img {}
+    img {
+        width: 90%;
+    }
 
     .logo-img {
         width: 60%;
