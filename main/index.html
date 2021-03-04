@@ -25,6 +25,29 @@
     </div>
      -->
 
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #000;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #64ff01;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #22f;
+        }
+
+    </style>
+
     <!-- sidenav -->
     <div class="sidenav">
 
@@ -65,33 +88,61 @@
 
         <div class="tab">
             <p style="text-align: center;">
-                <a href="https://prismlabo.github.io/main/index.html">
-                    <img src="https://github.com/prismlabo/prismlabo.github.io/blob/main/main/data/logo.png?raw=true" alt="LOGO" class="logo-img">
-                </a>
+                <img src="https://github.com/prismlabo/prismlabo.github.io/blob/main/main/data/logo.png?raw=true" alt="LOGO" class="logo-img" class="tablinks" onclick="openProj(event, 'ABOUT')">
             </p>
-
-            <h3 class="tablinks" onclick="openProj(event, 'ABOUT')">
-                ABOUT
-            </h3>
+            <hr>
             <h3 class="tablinks" onclick="openProj(event, 'K-MV PROJECT')">
                 K-MV PROJECT
             </h3>
+            <hr>
             <h3 class="tablinks" onclick="openProj(event, 'MAD PROJECT')">
                 MAD COLLECTION
             </h3>
-            <h3 class="tablinks" onclick="openProj(event, 'SPECIAL EDITION')">
-                MAD EDITION
-            </h3>
-            <h3 class="tablinks" onclick="openProj(event, 'ADDRESS')">
-                ADDRESS
-            </h3>
+            <p style="text-align: center;">
 
+                <img src="data/cw.png" alt="CW" class="artist-logo-img" class="tablinks" onclick="openProj(event, 'CW')">
+
+                <img src="data/dy.png" alt="DY" class="artist-logo-img" class="tablinks" onclick="openProj(event, 'DY')">
+
+                <img src="data/gm.png" alt="GM" class="artist-logo-img" class="tablinks" onclick="openProj(event, 'GM')">
+
+                <br>
+
+                <img src="data/hs.jpg" alt="HS" class="artist-logo-img" class="tablinks" onclick="openProj(event, 'HS')">
+
+                <img src="data/jh.jpg" alt="JH" class="artist-logo-img" class="tablinks" onclick="openProj(event, 'JH')">
+
+                <img src="data/js.jpg" alt="JS" class="artist-logo-img" class="tablinks" onclick="openProj(event, 'JS')">
+
+                <br>
+
+                <img src="data/sm.png" alt="SM" class="artist-logo-img" class="tablinks" onclick="openProj(event, 'SM')">
+
+                <img src="data/yi.jpg" alt="YI" class="artist-logo-img" class="tablinks" onclick="openProj(event, 'YI')">
+
+                <img src="data/yj.png" alt="YJ" class="artist-logo-img" class="tablinks" onclick="openProj(event, 'YJ')">
+
+            </p>
+
+            <hr>
+
+            <h3 class="tablinks" onclick="openProj(event, 'SPECIAL EDITION')">
+                * MAD EDITION *
+            </h3>
+            <hr>
+            <h3 class="tablinks" onclick="openProj(event, 'ADDRESS')">
+                ⓒ PRISMLABO
+            </h3>
         </div>
     </div>
 
+
     <div class="main">
         <div id="ABOUT" class="tabcontent">
-            <p>&lt;!-- ABOUT --&gt;</p>
+            <h1>&lt;!-- ABOUT --&gt;</h1>
+            <p style="text-align: center;">
+                <img src="https://github.com/prismlabo/prismlabo.github.io/blob/main/main/data/logo.png?raw=true" alt="LOGO" width="500px">
+            </p>
             <p>PRISMLABO는 빛과 소리를 통해 다양한 실험을 하는 영상 실험실입니다. <br>
                 영상매체를 통해 기존의 고정된 틀에서 벗어난 새로운 시각을 제시하고, 다양한 실험을 통해 재미있는 영상 프로젝트를 기획합니다. <br>
                 팀원 각각의 스타일과 해석을 바탕으로 다채로운 영상을 제작하고자 합니다.</p>
@@ -103,7 +154,7 @@
         </div>
 
         <div id="K-MV PROJECT" class="tabcontent">
-            <p>&lt;!-- K-MV PROJECT --&gt;</p>
+            <h1>&lt;!-- K-MV PROJECT --&gt;</h1>
 
             <p>PRISMLABO의 팀원 3명씩 3개의 팀을 만들고 각 팀별로 케이팝 뮤직비디오를 제작하는 프로젝트입니다.
             </p>
@@ -123,7 +174,7 @@
         </div>
 
         <div id="MAD PROJECT" class="tabcontent">
-            <p>&lt;!-- MAD COLLECTION --&gt;</p>
+            <h1>&lt;!-- MAD COLLECTION --&gt;</h1>
             <p>PRISMLABO 구성원 개개인의 개성이 담긴 실험실입니다.
                 스티커를 클릭하면 작가 개인 페이지로 이동합니다.
             </p>
@@ -168,10 +219,10 @@
         </div>
 
         <div id="BLACK" class="tabcontent">
-            <p>
+            <h1>
                 &lt;!-- K-MV PROJECT
                 --&gt;
-            </p>
+            </h1>
             <p>BLACK</p>
             <p>강유진 우예인 이채원</p>
             <!--썸네일(?)-->
@@ -182,10 +233,10 @@
 
 
         <div id="CLOUD" class="tabcontent">
-            <p class="tablinks" onclick="openProj(event, 'K-MV PROJECT')">
+            <h1 class="tablinks" onclick="openProj(event, 'K-MV PROJECT')">
                 &lt;!-- K-MV PROJECT
                 --&gt;
-            </p>
+            </h1>
             <p>CLOUD</p>
             <p>김도연 류현서 한진희</p>
             <p style="text-align: center;">
@@ -206,37 +257,43 @@
         </div>
 
         <div id="SPECIAL EDITION" class="tabcontent">
-            <p>
+            <h1>
                 &lt;!-- MAD EDITION
                 --&gt;
-            </p>
+            </h1>
 
             <p>이번 전시는 제 1회 이화여자대학교 디자인학부 소모임 연합 전시이자, 영상 실험실 프리즘라보의 첫 전시이기도 합니다. <br>
                 이를 기념하기 위해 구성원이 제작한 특별 에디션입니다.
             </p>
             <br>
-            <p>PRISMLABO LOGO</p>
+            <h2>PRISMLABO LOGO</h2>
             <p style="text-align: center;">
-                <img src="https://github.com/prismlabo/prismlabo.github.io/blob/main/main/data/logo.png?raw=true" alt="LOGO" class="responsive-img">
+                <img src="https://github.com/prismlabo/prismlabo.github.io/blob/main/main/data/logo.png?raw=true" alt="LOGO" width="500px">
             </p>
             <br>
 
-            <p>Ms Maddy Uranium Octocat</p>
+            <h2>Maddy Uranium Octocat</h2>
             <p style="text-align: center; ">
-                <img src="data/my-octocat-prismlabo-2.png" alt="OCTOCAT" class="responsive-img">
+                <img src="data/my-octocat-prismlabo-2.png" alt="OCTOCAT" width="500px">
             </p>
-
             <br>
 
-            <p>
+            <h2>
                 <a href="https://prismlabo.github.io/popular-gltf-loader-base-main/webgl_gltf_loader/examples/webgl_loader_gltf.html">Radioactive Drum</a>
-            </p>
+            </h2>
             <p style="text-align: center;">
                 <embed src="https://prismlabo.github.io/popular-gltf-loader-base-main/webgl_gltf_loader/examples/webgl_loader_gltf.html" width="1280" height="960">
             </p>
             <br>
 
-            <p>Uranium Dew Bubble</p>
+            <h2>Uranium Drum Label</h2>
+            <p style="text-align: center;">
+                <img src="data/hazwaste-drum-label.png" alt="hazwaste-drum-label.png">
+                <br>
+                <img src="data/hazwaste-drum-label-used.png" alt="hazwaste-drum-label-used.png"><br>
+            </p>
+            <br>
+            <h2>Uranium Dew Bubble</h2>
             <p style="text-align: center;">
                 <embed src="https://prismlabo.github.io/Icicle-Bubbles-master/app/index.html" width="1280" height="960">
             </p>
@@ -246,7 +303,7 @@
 
         <div id="ADDRESS" class="tabcontent">
             <address>
-                <p>&lt;!-- ADDRESS--&gt;</p>
+                <h1>&lt;!-- ADDRESS--&gt;</h1>
                 <p>
                     03760 서울특별시 서대문구 이화여대길 52 이화여자대학교<br>
                     조형예술관A동 201호<br>
@@ -264,6 +321,217 @@
                 </p><img src="https://github.githubassets.com/images/mona-whisper.gif" alt="LOGO">
             </address>
         </div>
+
+        <!-- artist intro -->
+        <div id="CW" class="tabcontent">
+            <h1>LEECHAEWON</h1>
+            <h1>이채원</h1>
+            <p>Instagram: <a href="https://www.instagram.com/chaeso__0127/">@chaeso__0127</a></p>
+            <hr>
+            <p style="text-align: center;">
+                <img alt="Photo by 이채소 in Seoul, Korea." class="FFVAD" crossorigin="anonymous" decoding="auto" sizes="600px" srcset="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/135658517_2755575661331812_4642657489161045194_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=104&amp;_nc_ohc=yQr3VaSbx3cAX8QXZEI&amp;oh=7c4744c9baf6512de4f38026598666e2&amp;oe=606B6944 640w,https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/135658517_2755575661331812_4642657489161045194_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=104&amp;_nc_ohc=yQr3VaSbx3cAX8QXZEI&amp;oh=e02899c4a2362ec6e8eb7942811d91dd&amp;oe=6069DCFB 750w,https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/135658517_2755575661331812_4642657489161045194_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=104&amp;_nc_ohc=yQr3VaSbx3cAX8QXZEI&amp;oh=1e943b35a6ef1f64dd1ca6fd5567053b&amp;oe=606BB92B 1080w" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/135658517_2755575661331812_4642657489161045194_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=104&amp;_nc_ohc=yQr3VaSbx3cAX8QXZEI&amp;oh=1e943b35a6ef1f64dd1ca6fd5567053b&amp;oe=606BB92B" style="object-fit: cover;">
+            </p>
+            <hr>
+            <p style="text-align: center;">
+                <img src="artist%20site/leechaewon/data/odd_1.jpg" width="400">
+                <img src="artist%20site/leechaewon/data/odd_2.jpg" width="400">
+                <img src="artist%20site/leechaewon/data/odd_3.jpg" width="400">
+                <img src="artist%20site/leechaewon/data/Under the sea_1.jpg" width="400">
+                <img src="artist%20site/leechaewon/data/Under the sea_2.jpg" width="400">
+                <img src="artist%20site/leechaewon/data/Under the sea_3.jpg" width="400">
+                <img src="artist%20site/leechaewon/data/Universe_1.jpg" width="400">
+                <img src="artist%20site/leechaewon/data/Universe_2.jpg" width="400">
+                <img src="artist%20site/leechaewon/data/Universe_3.jpg" width="400">
+            </p><br>
+            <hr>
+            <h2>2021 PRISMLABO</h2>
+            <h3>PRISMLABO LOGO & CONCEPT DESIGN</h3>
+            <p style=" text-align: center;">
+                <img src="https://github.com/prismlabo/prismlabo.github.io/blob/main/main/data/logo.png?raw=true" width="500px">
+
+                <img alt="Photo shared by 이채소 on August 25, 2020 tagging @prism_labo. May be an image of text that says 'LABO PRISM'." class="FFVAD" crossorigin="anonymous" decoding="auto" sizes="500px" srcset="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/118246869_224510662318802_936166343460541902_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=102&amp;_nc_ohc=dVokjTQeOZcAX_qvjd_&amp;oh=c9bab0e654d2b3e5d165dd79495e7313&amp;oe=606B9F89 640w,https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/118246869_224510662318802_936166343460541902_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=102&amp;_nc_ohc=dVokjTQeOZcAX_qvjd_&amp;oh=f25616f3a7406c1b9a703f5bdab1fc75&amp;oe=606AB109 750w,https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/118246869_224510662318802_936166343460541902_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=102&amp;_nc_ohc=dVokjTQeOZcAX_qvjd_&amp;oh=d4efc8b2d9e595942d0a203170c48412&amp;oe=6069FCC0 1080w" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/118246869_224510662318802_936166343460541902_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=102&amp;_nc_ohc=dVokjTQeOZcAX_qvjd_&amp;oh=d4efc8b2d9e595942d0a203170c48412&amp;oe=6069FCC0" style="object-fit: cover;">
+
+                <br>
+
+                <img alt="Photo shared by 이채소 on August 25, 2020 tagging @prism_labo. May be an image of text that says 'PRISM'." class="FFVAD" crossorigin="anonymous" decoding="auto" sizes="500px" srcset="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/118211632_613262636040626_6559483532829149414_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=102&amp;_nc_ohc=iHVbNXsd7hMAX_NffCd&amp;oh=adae4b4800f092466f562ac63341201f&amp;oe=606B52C2 640w,https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/118211632_613262636040626_6559483532829149414_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=102&amp;_nc_ohc=iHVbNXsd7hMAX_NffCd&amp;oh=dc2f50f91f34b0855491aa162c945d6a&amp;oe=60681E06 750w,https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/118211632_613262636040626_6559483532829149414_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=102&amp;_nc_ohc=iHVbNXsd7hMAX_NffCd&amp;oh=2f98087d7efaca766df0c6d00822d294&amp;oe=606B4C86 1080w" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/118211632_613262636040626_6559483532829149414_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=102&amp;_nc_ohc=iHVbNXsd7hMAX_NffCd&amp;oh=2f98087d7efaca766df0c6d00822d294&amp;oe=606B4C86" style="object-fit: cover;">
+
+                <img alt="Photo shared by 이채소 on August 25, 2020 tagging @prism_labo. May be an image of text that says 'LABO Laboratory 2020 Since Video'." class="FFVAD" crossorigin="anonymous" decoding="auto" sizes="500px" srcset="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/118211472_586636355342930_3410197182465291615_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=102&amp;_nc_ohc=2dZx_1ygbPYAX_FOrtr&amp;oh=3d4d5958f4d1d07981793d95af75bcb0&amp;oe=60686333 640w,https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/118211472_586636355342930_3410197182465291615_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=102&amp;_nc_ohc=2dZx_1ygbPYAX_FOrtr&amp;oh=40aafe266d1065eda52f292d4051d6c2&amp;oe=606AFFF7 750w,https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/118211472_586636355342930_3410197182465291615_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=102&amp;_nc_ohc=2dZx_1ygbPYAX_FOrtr&amp;oh=ebde8f0abc98138ecc16d466f2a7f410&amp;oe=606B64F7 1080w" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/118211472_586636355342930_3410197182465291615_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=102&amp;_nc_ohc=2dZx_1ygbPYAX_FOrtr&amp;oh=ebde8f0abc98138ecc16d466f2a7f410&amp;oe=606B64F7" style="object-fit: cover;">
+            </p>
+
+            <h3>BLACK MV</h3>
+            <p style="text-align: center;">
+                <img alt="Photo shared by 이채소 on March 03, 2021 tagging @prism_labo. May be a black-and-white image of one or more people." class="FFVAD" crossorigin="anonymous" decoding="auto" sizes="600px" srcset="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/156164348_762533391051058_781630585536148707_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=110&amp;_nc_ohc=fIkreqP23VgAX-SGLDY&amp;oh=2fbc88b728f286b66e9f75d0d32f3fd1&amp;oe=606832A3 640w,https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/156164348_762533391051058_781630585536148707_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=110&amp;_nc_ohc=fIkreqP23VgAX-SGLDY&amp;oh=9a0534a0a492571d39d86a7698d8d435&amp;oe=606AC323 750w,https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/156164348_762533391051058_781630585536148707_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=110&amp;_nc_ohc=fIkreqP23VgAX-SGLDY&amp;oh=3a8d50bb67217f89d9f7c73c7d284b17&amp;oe=606B2416 1080w" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/156164348_762533391051058_781630585536148707_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=110&amp;_nc_ohc=fIkreqP23VgAX-SGLDY&amp;oh=3a8d50bb67217f89d9f7c73c7d284b17&amp;oe=606B2416" style="object-fit: cover;">
+
+
+                <img alt="Photo by 이채소 on March 03, 2021. May be a closeup." class="FFVAD" crossorigin="anonymous" decoding="auto" style="object-fit: cover;" sizes="600px" srcset="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/155864823_185112630084889_5989762780398388215_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=101&amp;_nc_ohc=n84yUjoRydEAX-f04nq&amp;oh=559d20985831d7d84cacce648555b3b8&amp;oe=60688FA7 640w,https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/155864823_185112630084889_5989762780398388215_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=101&amp;_nc_ohc=n84yUjoRydEAX-f04nq&amp;oh=7bc7f0f63931f5897fc1dc8411959473&amp;oe=6069D0E3 750w,https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/155864823_185112630084889_5989762780398388215_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=101&amp;_nc_ohc=n84yUjoRydEAX-f04nq&amp;oh=54527d44d380479dd713ee1a74bea138&amp;oe=606BAB63 1080w" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/155864823_185112630084889_5989762780398388215_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=101&amp;_nc_ohc=n84yUjoRydEAX-f04nq&amp;oh=54527d44d380479dd713ee1a74bea138&amp;oe=606BAB63">
+
+                <img alt="Photo by 이채소 on March 03, 2021. May be art." class="FFVAD" crossorigin="anonymous" decoding="auto" style="object-fit: cover;" sizes="600px" srcset="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/156233232_418641715866030_7436804981209912367_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=106&amp;_nc_ohc=ROavgfDgCzsAX9ysEtA&amp;oh=86cf926775d6d2ce152f27a98d6ca426&amp;oe=606A615B 640w,https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/156233232_418641715866030_7436804981209912367_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=106&amp;_nc_ohc=ROavgfDgCzsAX9ysEtA&amp;oh=1cb6e140fa10cddc3262d5e68e478ced&amp;oe=6069211F 750w,https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/156233232_418641715866030_7436804981209912367_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=106&amp;_nc_ohc=ROavgfDgCzsAX9ysEtA&amp;oh=7dead4a29889334d96927902bd7c89ff&amp;oe=606A0A9F 1080w" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/156233232_418641715866030_7436804981209912367_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=106&amp;_nc_ohc=ROavgfDgCzsAX9ysEtA&amp;oh=7dead4a29889334d96927902bd7c89ff&amp;oe=606A0A9F">
+
+                <img alt="Photo shared by 이채소 on March 03, 2021 tagging @prism_labo. May be a black-and-white image." class="FFVAD" crossorigin="anonymous" decoding="auto" sizes="600px" srcset="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/155516107_439047640747956_2599776232476193347_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=100&amp;_nc_ohc=WyVo54bi1TYAX9MsGug&amp;oh=de810bda9d0bc7a17d66878de9661257&amp;oe=60692ACB 640w,https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/155516107_439047640747956_2599776232476193347_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=100&amp;_nc_ohc=WyVo54bi1TYAX9MsGug&amp;oh=97985c46c1f3425f4155b9f4f5397930&amp;oe=6069BC8F 750w,https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/155516107_439047640747956_2599776232476193347_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=100&amp;_nc_ohc=WyVo54bi1TYAX9MsGug&amp;oh=ccec4f50c41da6d0f6887f688288e01a&amp;oe=606BC18F 1080w" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/155516107_439047640747956_2599776232476193347_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=100&amp;_nc_ohc=WyVo54bi1TYAX9MsGug&amp;oh=ccec4f50c41da6d0f6887f688288e01a&amp;oe=606BC18F" style="object-fit: cover;">
+            </p>
+            <hr>
+            <p>
+                © chaewonlee
+            </p>
+        </div>
+
+        <div id="DY" class="tabcontent">
+            <h1>KIMDOYEON</h1>
+            <h1>김도연</h1>
+            <p>Instagram: <a href="https://www.instagram.com/dearkdy/?igshid=1q72ka2nq67pu">@dearkdy</a></p>
+            <hr>
+            <p>
+                © KIMDOYEON
+            </p>
+        </div>
+
+        <div id="GM" class="tabcontent">
+            <h1>ANGYUMI</h1>
+            <h1>안규미</h1>
+            <p>Instagram: <a href="https://www.instagram.com/mad_mgntc/?hl=ko">@mad_mgntc</a>
+                <br>
+                Website: <a href="https://ank-umi.github.io/businesscard/index.html">GYUMI-ANK</a>
+            </p>
+            <hr>
+            <h2>Mad Radioactive Field</h2>
+            <p style="text-align: center;">
+                <img src="artist%20site/gyumian/data/radioactive-field.png" alt="radioactive-field.png" width="1200px">
+            </p>
+            <p style="text-align: center;">The final storage of waste is still an issue - and will continue to be so for a very, very long time. <br>
+                Nuclear waste remains radioactive for almost a million years.</p>
+            <p style="text-align: center;">
+                <img src="artist%20site/gyumian/data/spent-fuel.png" alt="spent-fuel.png" width="550px">
+                <img src="artist%20site/gyumian/data/Pollution-scandal-engulfs-China-s-meat-industry_wrbm_large.png" alt="Pollution-scandal-engulfs-China-s-meat-industry_wrbm_large.png" width="550px">
+                <img src="artist%20site/gyumian/data/radioactive-vault.png" alt="radioactive-vault.png" width="550px">
+                <img src="artist%20site/gyumian/data/radioactive-vault-ing.png" alt="radioactive-vault-ing.png" width="550px">
+            </p>
+            <p style="text-align: center;">Unlike other industrial wastes, the level of hazard of all nuclear waste - its radioactivity - diminishes with time. </p>
+            <hr>
+            <h2>Ms ANK</h2>
+            <p style="text-align: center;">
+                <img alt="Photo by 안규미작업계 on September 22, 2020. May be an image of balloon." class="FFVAD" decoding="auto" sizes="600px" srcset="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/119932298_1042321549538563_3768696176341887744_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=107&amp;_nc_ohc=cowmS7dJf4UAX_Jd30l&amp;oh=b4f111f783fc965d09802fa409361954&amp;oe=606A6017 640w,https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/119932298_1042321549538563_3768696176341887744_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=107&amp;_nc_ohc=cowmS7dJf4UAX_Jd30l&amp;oh=abf1fc37001fed537088108f4df8ad02&amp;oe=6068D7B0 750w,https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/119932298_1042321549538563_3768696176341887744_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=107&amp;_nc_ohc=cowmS7dJf4UAX_Jd30l&amp;oh=0dc41e5ed41f573f03775c1343791769&amp;oe=60696300 1080w" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/119932298_1042321549538563_3768696176341887744_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=107&amp;_nc_ohc=cowmS7dJf4UAX_Jd30l&amp;oh=0dc41e5ed41f573f03775c1343791769&amp;oe=60696300" style="object-fit: cover;">
+                <br>
+            </p>
+            <hr>
+            <p>
+                © GYUMI-ANK
+            </p>
+        </div>
+
+        <div id="HS" class="tabcontent">
+            <h1>RYUHYUNSEO</h1>
+            <h1>류현서</h1>
+            <p>Website: <a href="https://mom0831.myportfolio.com/">myportfolio.com</a></p>
+            <p style="text-align: center;">
+            </p>
+            <hr>
+            <p>
+                © RYUHYUNSEO
+            </p>
+        </div>
+
+        <div id="JH" class="tabcontent">
+            <h1>HANJINHEE</h1>
+            <h1>한진희</h1>
+            <p style="text-align: center;">
+            </p>
+            <hr>
+            <p>
+                © HANJINHEE
+            </p>
+        </div>
+
+        <div id="JS" class="tabcontent">
+            <h1>PARKJISOO</h1>
+            <h1>박지수</h1>
+            <p style="text-align: center;">
+            </p>
+            <hr>
+            <p>
+                © PARKJISOO
+            </p>
+        </div>
+
+        <div id="SM" class="tabcontent">
+            <h1>CHOSUMIN</h1>
+            <h1>조수민</h1>
+            <p style="text-align: center;">
+            </p>
+            <hr>
+            <p style="text-align: center;">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/Jd9WYRVf8D0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+            <hr>
+            <h2>2021 PRISMLABO: SARYEONI</h2>
+            <p style="text-align: center;">
+                <img src="artist%20site/chosumin/data/C0008T01.JPG" width="600px">
+                <img src="artist%20site/chosumin/data/C0014T01.JPG" width="600px">
+                <img src="artist%20site/chosumin/data/C0029T01.JPG" width="600px">
+                <img src="artist%20site/chosumin/data/C0019T01.JPG" width="600px">
+            </p>
+            <h3 style="text-align: center;"> <a href="data/saryeoni-storyboard.pdf">- STORY BOARD -</a>
+            </h3>
+            <br>
+            <hr>
+            <p>
+                © CHOSUMIN
+            </p>
+        </div>
+
+        <div id="YI" class="tabcontent">
+            <h1>WOOYEIN</h1>
+            <h1>우예인</h1>
+            <p>Instagram: @wooyein<br>
+                Phone: 010.8222.8578<br>
+                Mail: jjssee20000@naver.com</p>
+            <hr>
+            <p style="text-align: center;">
+                <img src="artist%20site/wooyein/data/mad flowers ...png" alt="mad flowers" width="400px">
+                <img src="artist%20site/wooyein/data/mad%20flowers%20.jpg" alt="mad flowers" width="400px">
+                <img src="artist%20site/wooyein/data/mad%20flowers(1).jpg" alt="mad flowers" width="400px">
+                <img src="artist%20site/wooyein/data/mad%20flowers(2).jpg" alt="mad flowers" width="400px">
+                <img src="artist%20site/wooyein/data/mad%20flowers(3).jpg" alt="mad flowers" width="400px">
+                <img src="artist%20site/wooyein/data/mad%20flowers(4).jpg" alt="mad flowers" width="400px">
+                <img src="artist%20site/wooyein/data/mad%20flowers(5).jpg" alt="mad flowers" width="400px">
+                <img src="artist%20site/wooyein/data/mad%20flowers(6).jpg" alt="mad flowers" width="400px">
+                <img src="artist%20site/wooyein/data/mad%20flowers.jpg" alt="mad flowers" width="400px">
+                <img src="artist%20site/wooyein/data/mad%20flowers.png" alt="mad flowers" width="400px">
+                <img src="artist%20site/wooyein/data/mad-flowers-cat.jpg" alt="mad flowers" width="400px">
+            </p>
+            <hr>
+            <p>
+                © WOOYEIN
+            </p>
+        </div>
+
+        <div id="YJ" class="tabcontent">
+            <h1>KANGYUJIN</h1>
+            <h1>강유진</h1>
+            <p><a href="https://www.instagram.com/uujene/">@uujene</a></p>
+            <hr>
+            <p style="text-align: center;">
+                <img src="artist%20site/kangyujin/data/yj2.png" width="400px">
+                <img src="artist%20site/kangyujin/data/yj2.png" width="400px">
+                <img src="artist%20site/kangyujin/data/yj3.png" width="400px">
+                <img src="artist%20site/kangyujin/data/yj4.png" width="400px">
+                <img src="artist%20site/kangyujin/data/yj5.png" width="400px">
+                <img src="artist%20site/kangyujin/data/yj6.png" width="400px">
+                <img src="artist%20site/kangyujin/data/yj7.png" width="400px">
+                <img src="artist%20site/kangyujin/data/yj8.png" width="400px">
+                <img src="artist%20site/kangyujin/data/yj9.png" width="400px">
+            </p>
+            <hr>
+            <h2>2021 Movie title sequence_mad version (designed by youjin)</h2>
+            <p style="text-align: center;">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/w9RCZALmb9o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+            <p>영화 Atonement를 모티브로 하여 미쳐버린 사랑, 광기에 가까운 집착을 색감과 오브제를 통해 표현하였다.</p>
+            <hr>
+            <p>
+                © KANGYUJIN
+            </p>
+        </div>
+
     </div>
 
 
