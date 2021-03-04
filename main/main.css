@@ -45,7 +45,7 @@ body {
     top: 0;
     left: 0;
     overflow-x: hidden;
-    padding: 0em 1em 0em;
+    padding: 0em 0em 0em;
     background-color: #64ff01;
     background: linear-gradient(to bottom, #64ff01, #22f, transparent, transparent);
     /* background-color: #64ff01; */
@@ -62,11 +62,11 @@ body {
 .main {
     background: #000;
     color: #888;
-    margin-left: 18%;
+    margin-left: 15%;
     /* Same as the width of the sidenav */
     border: 0px solid transparent;
     box-sizing: border-box;
-    padding: 0em 1em 0em;
+    padding: 1em 1em 1em;
     text-align: left;
 }
 
@@ -177,12 +177,12 @@ p {
 button {}
 
 a:link {
-    color: #888;
+    color: #fff;
     text-decoration: none;
 }
 
 a:visited {
-    color: #888;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -196,7 +196,7 @@ a:active {
 
 .column {
     text-align: left;
-    line-height: 1 em;
+    line-height: 1em;
     float: left;
     width: 50%;
 }
@@ -242,7 +242,7 @@ img {
 }
 
 .logo-img {
-    width: 50%;
+    width: 55%;
     height: auto;
     text-align: center;
 }
@@ -379,18 +379,19 @@ iframe:hover {}
         background-color: transparent;
     }
 
-
     h1 {
         text-align: center;
-        font-size: 2.5em;
+        font-size: 1.8em;
     }
 
     h2 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     h3 {
-        font-size: 2.5em;
+        font-size: 1.6em;
+
+        text-align: center;
     }
 
     p {
