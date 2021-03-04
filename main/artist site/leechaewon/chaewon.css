@@ -278,7 +278,6 @@ iframe:hover {}
     }
 }
 
-
 /* At mobile display */
 @media screen and (max-width: 1242px) {
     /* 1242px */
@@ -288,15 +287,13 @@ iframe:hover {}
         font-size: 1.5em;
         line-height: 1.0em;
         margin: 0 auto;
-        padding: 0em 1em 1em;
-        text-align: center;
-        font-size: 2em;
+        padding: 0em 1em 0em;
     }
 
 
     .main {
         width: 100%;
-        color: #fff;
+        color: #888;
     }
 
     /* Style the tab */
@@ -316,21 +313,15 @@ iframe:hover {}
 
 
     h1 {
-        text-align: center;
-        font-size: 2.5em;
+        font-size: 3.5em;
     }
 
     h2 {
         font-size: 2em;
     }
 
-    h3 {
-        font-size: 2.5em;
-    }
-
     p {
         line-height: 1.5em;
-        text-align: center;
     }
 
 
@@ -349,12 +340,15 @@ iframe:hover {}
 
     .column {}
 
-    .footer {
-        text-align: center;
-    }
+    .footer {}
 
     iframe {
-        max-width: 95%;
+        max-width: 560px;
         max-height: auto;
+        filter: grayscale(100%);
+    }
+
+    iframe:hover {
+        filter: grayscale(0%);
     }
 }
