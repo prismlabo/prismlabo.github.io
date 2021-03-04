@@ -253,7 +253,7 @@ img:active {
 }
 
 img:hover {
-    filter: drop-shadow(1px 1px 5px #64ff01);
+    filter: drop-shadow(1px 1px 10px #64ff01);
 }
 
 /* Clear floats after the columns */
