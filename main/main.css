@@ -323,8 +323,8 @@ iframe:hover {}
 
     body {
         box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-        font-size: 1.5em;
-        line-height: 1.0em;
+        font-size: 2em;
+        line-height: 1em;
         margin: 0 auto;
         padding: 0em 0em 0em;
         text-align: center;
@@ -371,11 +371,15 @@ iframe:hover {}
 
     h1 {
         text-align: center;
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     h2 {
         font-size: 2em;
+    }
+
+    h3 {
+        font-size: 2.5em;
     }
 
     p {
