@@ -7,4 +7,4 @@ Unlike traditional 3D metaball effect, it only blends the depth. <br>
 Which means there is no transparency support but in that case there is no need to deal with the blocked mesh. <br>
 For the light scattering effect, it is faked by the depth blend and the depth blur with upside/downside rendering. <br>
 <br>
-License: mThis experiment is under MIT License.
+This experiment is under MIT License.
