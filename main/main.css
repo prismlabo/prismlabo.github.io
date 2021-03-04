@@ -28,7 +28,7 @@ body {
 .top-nav {
     position: fixed;
     overflow: hidden;
-    color: #888;
+    color: #777;
     /* background: linear-gradient(#64ff01, transparent, transparent);*/
     padding: 0em 1em 0em;
     top: 0;
@@ -41,7 +41,7 @@ body {
 
 .sidenav {
     height: 100%;
-    width: 20%;
+    width: 15%;
     position: fixed;
     z-index: 0;
     top: 0;
@@ -49,9 +49,9 @@ body {
     overflow-x: hidden;
     padding: 0em 1em 0em;
     background-color: #64ff01;
-    background: linear-gradient(to bottom, #64ff01, #33f, transparent, transparent);
+    background: linear-gradient(to bottom, #64ff01, #22f, transparent, transparent);
     /* background-color: #64ff01; */
-    color: #666;
+    color: #777;
     text-align: center;
 }
 
@@ -70,7 +70,7 @@ body {
 .main {
     background: #000;
     color: #888;
-    margin-left: 25%;
+    margin-left: 18%;
     /* Same as the width of the sidenav */
     border: 0px solid transparent;
     box-sizing: border-box;
@@ -80,7 +80,6 @@ body {
 
 address {
 
-    color: #888;
     padding: 0em 1em 0em;
 }
 
@@ -186,12 +185,13 @@ p {
 button {}
 
 a:link {
-    color: #888;
+    color: #777;
     text-decoration: none;
 }
 
 a:visited {
-    color: #888;
+    color: #777;
+    text-decoration: none;
 }
 
 a:hover {
@@ -199,7 +199,7 @@ a:hover {
 }
 
 a:active {
-    color: #00f;
+    color: mediumslateblue;
 }
 
 .column {
@@ -250,7 +250,7 @@ img {
 }
 
 .responsive-img {
-    width: 40%;
+    width: 50%;
     height: auto;
     text-align: center;
 }
@@ -261,6 +261,11 @@ img:active {
 }
 
 img:hover {
+    filter: drop-shadow(1px 1px 10px #64ff01);
+    opacity: 1;
+}
+
+.trans-img:hover {
     transform: rotateZ(120deg);
     filter: drop-shadow(1px 1px 10px #64ff01);
     opacity: 1;
