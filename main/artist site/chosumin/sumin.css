@@ -344,7 +344,7 @@ iframe:hover {}
     .footer {}
 
     iframe {
-        max-width: 560px;
+        max-width: 95%;
         max-height: auto;
         filter: grayscale(100%);
     }
