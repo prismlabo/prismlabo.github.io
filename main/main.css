@@ -1,5 +1,5 @@
 html {
-    background: #000;
+    background: #64ff01;
 }
 
 body {
@@ -241,8 +241,20 @@ img {
     background-color: #008CBA;
 }
 
+.logo-img {
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+
 .responsive-img {
     width: 50%;
+    height: auto;
+    text-align: center;
+}
+
+.sticker-img {
+    width: 30%;
     height: auto;
     text-align: center;
 }
@@ -386,10 +398,19 @@ iframe:hover {}
     }
 
 
-    img {
+    img {}
+
+    .logo-img {
+        width: 60%;
+        height: auto;
     }
 
     .responsive-img {
+        width: 60%;
+        height: auto;
+    }
+
+    .sticker-img {
         width: 60%;
         height: auto;
     }
