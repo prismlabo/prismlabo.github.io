@@ -326,7 +326,7 @@ iframe:hover {}
         font-size: 2em;
         line-height: 1em;
         margin: 0 auto;
-        padding: 0em 0em 0em;
+        padding: 0em 0em 1em;
         text-align: center;
     }
 
@@ -361,12 +361,10 @@ iframe:hover {}
 
     /* Style the tab content */
     .tabcontent {
-
         display: none;
         border: 1px solid transparent;
         border-top: none;
         background-color: transparent;
-
     }
 
 
@@ -389,10 +387,6 @@ iframe:hover {}
 
 
     img {
-        transition: width 3s, height 3s, transform 3s;
-        z-index: 0;
-        cursor: pointer;
-        border: 1em solid rgba(0, 0, 0, 0);
     }
 
     .responsive-img {
@@ -405,7 +399,6 @@ iframe:hover {}
     .footer {}
 
     embed {
-
         width: 95%;
     }
 
