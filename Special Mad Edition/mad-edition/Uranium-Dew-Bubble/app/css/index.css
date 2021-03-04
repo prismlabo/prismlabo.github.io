@@ -1,0 +1,132 @@
+html {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: 'Noto Serif KR',
+        serif;
+    background-color: #000;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+body {
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor:
+        font-family: 'Noto Serif KR', serif;
+    font-size: 1.2em;
+    color: #888;
+}
+
+html,
+body,
+.mobile,
+.mobile *,
+.loader,
+.logo,
+.footer,
+.footer * {
+    box-sizing: border-box;
+}
+
+.dg .c .selector {
+    transform: translate(0, -1px);
+}
+
+.dg.ac {}
+
+.mobile {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    padding: 0 30px;
+
+    font-size: 12px;
+    color: #fff;
+
+    transform: translate3d(0, -50%, 0);
+}
+
+.mobile span {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+.mobile a {
+    color: #ccc;
+}
+
+.logo {
+    display: none;
+    position: absolute;
+    left: 0%;
+    top: 15%;
+    width: 200px;
+    height: 200px;
+    background-size: 200px 200px;
+    background-image: url(../images/logo.png);
+    pointer-events: none;
+    opacity: 0;
+}
+
+@media (min-width: 960px) {
+    .logo {
+        left: 75%;
+    }
+}
+
+.instruction,
+.footer {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    font-size: 14px;
+
+    background-color: transparent;
+}
+
+html.is-mobile .instruction,
+html.is-mobile .footer {
+    font-size: 11px;
+}
+
+.instruction {
+    pointer-events: none;
+    color: #ccc;
+}
+
+.footer {
+    text-align: right;
+    color: #999;
+}
+
+.footer span {
+    display: inline-block;
+    transform: translate3d(0, 50px, 0);
+}
+
+.footer a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+html.is-white .footer {
+    color: #000;
+}
+
+html.is-white .footer a {
+    color: #000;
+}
