@@ -8,8 +8,6 @@ body {
     line-height: 1.5;
     margin: 0 auto;
     padding: 0em 0em 0em;
-
-
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -53,19 +51,13 @@ body {
     /* background-color: #64ff01; */
     color: #777;
     text-align: center;
+
+    cursor: pointer;
 }
 
-.sidenav a {
+.sidenav a {}
 
-    text-decoration: none;
-
-    color: #818181;
-    display: block;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
+.sidenav:hover {}
 
 .main {
     background: #000;
@@ -281,6 +273,29 @@ img:hover {
 iframe {}
 
 iframe:hover {}
+
+.grab {
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+.grabbing {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+}
+
+.not-allowed {
+    cursor: not-allowed;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.wait {
+    cursor: wait;
+}
+
 
 .footer {
     position: fixed;
