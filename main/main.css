@@ -177,12 +177,12 @@ p {
 button {}
 
 a:link {
-    color: #777;
+    color: #fff;
     text-decoration: none;
 }
 
 a:visited {
-    color: #777;
+    color: #fff;
     text-decoration: none;
 }
 
