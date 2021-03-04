@@ -1,5 +1,5 @@
 html {
-    background: #64ff01;
+    background: #000;
 }
 
 body {
@@ -26,7 +26,7 @@ body {
 .top-nav {
     position: fixed;
     overflow: hidden;
-    color: #777;
+    color: #888;
     /* background: linear-gradient(#64ff01, transparent, transparent);*/
     padding: 0em 1em 0em;
     top: 0;
@@ -49,7 +49,7 @@ body {
     background-color: #64ff01;
     background: linear-gradient(to bottom, #64ff01, #22f, transparent, transparent);
     /* background-color: #64ff01; */
-    color: #777;
+    color: #888;
     text-align: center;
 
     cursor: pointer;
@@ -163,7 +163,7 @@ samp {
 }
 
 hr {
-    border: 1px solid #777;
+    border: 1px solid #888;
     padding: 0em 0em 0em;
 }
 
@@ -353,7 +353,7 @@ iframe:hover {}
         padding: 0em 0em 1em;
         background-color: #64ff01;
         /* background-color: #64ff01; */
-        color: #666;
+        color: #777;
     }
 
     .main {
