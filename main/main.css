@@ -163,7 +163,7 @@ samp {
 }
 
 hr {
-    border: 1px solid #000;
+    border: 1px solid #777;
     padding: 0em 0em 0em;
 }
 
@@ -248,19 +248,12 @@ img {
 }
 
 img:active {
-    transform: rotateZ(120deg);
+    transform: rotateZ(360deg);
     /* transform: rotate(180deg); */
 }
 
 img:hover {
-    filter: drop-shadow(1px 1px 10px #64ff01);
-    opacity: 1;
-}
-
-.trans-img:hover {
-    transform: rotateZ(120deg);
-    filter: drop-shadow(1px 1px 10px #64ff01);
-    opacity: 1;
+    filter: drop-shadow(1px 1px 5px #64ff01);
 }
 
 /* Clear floats after the columns */
@@ -303,14 +296,12 @@ iframe:hover {}
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: transparent;
     color: #888;
     text-align: left;
     border: 0px solid transparent;
     box-sizing: border-box;
     line-height: 1.5em;
     padding: 0em 1em 0em;
-
 }
 
 /* Image effect */
@@ -340,8 +331,8 @@ iframe:hover {}
     }
 
     .sidenav {
+        position: relative;
         width: 100%;
-        position: fixed;
         z-index: 0;
         top: 0;
         left: 0;
@@ -353,7 +344,6 @@ iframe:hover {}
     }
 
     .main {
-        width: 100%;
         background: #000;
         color: #888;
         margin-left: 0%;
@@ -380,7 +370,8 @@ iframe:hover {}
 
 
     h1 {
-        font-size: 3.5em;
+        text-align: center;
+        font-size: 3em;
     }
 
     h2 {
@@ -408,13 +399,14 @@ iframe:hover {}
 
     .footer {}
 
-    iframe {
-        max-width: 560px;
-        max-height: auto;
-        filter: grayscale(100%);
+    embed {
+
+        width: 95%;
     }
 
-    iframe:hover {
-        filter: grayscale(0%);
+    iframe {
+        max-width: 95%;
+        max-height: auto;
     }
+
 }
