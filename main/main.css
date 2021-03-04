@@ -345,7 +345,7 @@ iframe:hover {}
 
     .main {
         background: #000;
-        color: #888;
+        color: #fff;
         margin-left: 0%;
         /* Same as the width of the sidenav */
         border: 0px solid transparent;
