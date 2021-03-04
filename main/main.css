@@ -350,7 +350,7 @@ iframe:hover {}
         top: 0;
         left: 0;
         overflow-x: hidden;
-        padding: 0em 1em 0em;
+        padding: 0em 0em 1em;
         background-color: #64ff01;
         /* background-color: #64ff01; */
         color: #666;
@@ -363,7 +363,7 @@ iframe:hover {}
         /* Same as the width of the sidenav */
         border: 0px solid transparent;
         box-sizing: border-box;
-        padding: 0em 1em 0em;
+        padding: 1em 1em 1em;
     }
 
     /* Style the tab */
