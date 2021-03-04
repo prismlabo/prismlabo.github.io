@@ -1,0 +1,155 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    background-color: #000;
+    color: #888;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.2em;
+    cursor: grab;
+
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+h1 {
+    font-family: 'Noto Serif KR', serif;
+}
+
+
+h2 {
+    font-family: 'Noto Serif KR', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 600;
+    line-height: 0;
+
+}
+
+strong {}
+
+mark {}
+
+b {}
+
+textarea {}
+
+samp {}
+
+p,
+strong {}
+
+a {
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:link {}
+
+a:visited {}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {}
+
+
+button {
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+canvas {
+    display: block;
+}
+
+.info {
+    position: fixed;
+    top: 0px;
+    padding: 0em 0em 0em;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    z-index: 1;
+    /* TODO Solve this in HTML */
+}
+
+.footer {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    color: #888;
+    text-align: left;
+    border: 0px solid transparent;
+    box-sizing: border-box;
+    line-height: 1.5em;
+    padding: 0em 1em 0em;
+
+}
+
+
+
+.dg.ac {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 2 !important;
+    /* TODO Solve this in HTML */
+}
+
+#overlay {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#overlay button {
+    background: transparent;
+    border: 0;
+
+    padding: 16px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#notSupported {
+    width: 50%;
+    margin: auto;
+    background-color: #0f0;
+    margin-top: 20px;
+    padding: 10px;
+}
