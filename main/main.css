@@ -47,8 +47,7 @@ body {
     left: 0;
     overflow-x: hidden;
     padding: 0em 0em 0em;
-    background-color: #64ff01;
-    background: linear-gradient(to bottom, #22f, #64ff01, #22f);
+    background-color: #000;
     /* background-color: #64ff01; */
     color: #888;
     text-align: center;
